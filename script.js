@@ -9,18 +9,9 @@ const SESSION_KEY = "xfut_session";
 // Força logout sempre que a página for carregada
 localStorage.removeItem(SESSION_KEY);
 
-// Checa login ao carregar
-window.onload = function() {
-  if (localStorage.getItem(SESSION_KEY) === "active") {
-    showMain();
-  } else {
-    showLogin();
-  }
-    // ...
-};
 // Lista de jogos e opções
 const jogos = [
-    {
+  {
     nome: "Final da Champions | PSG VS Inter (31/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
@@ -41,13 +32,13 @@ const jogos = [
       { nome: "Opção 2", url: "https://embedflix.top/tv/espn" }
     ]
   },
-    {
+  {
     nome: "Jogo do Brasil(F) Vs Japão(F) (30/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://hlsplus.pro/play/prime.php?id=sportvalt" },
       { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
     ]
-  }, 
+  },
   {
     nome: "Jogo do Vasco da Gama Vs Bragantino (31/05)",
     opcoes: [
@@ -62,7 +53,7 @@ const jogos = [
       { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-1-hd" }
     ]
   },
-    {
+  {
     nome: "UFC",
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
@@ -71,24 +62,21 @@ const jogos = [
   }
 ];
 
-// Controle de sessão via localStorage
-const SESSION_KEY = "xfut_session";
+// Função para mostrar a tela principal
+function showMain() {
+  document.getElementById("login-container").style.display = "none";
+  document.getElementById("main-container").style.display = "block";
+  renderJogos();
+}
 
-// Checa login ao carregar
-window.onload = function() {
-  if (localStorage.getItem(SESSION_KEY) === "active") {
-    showMain();
-  } else {
-    showLogin();
-  }
-  // Bloquear segunda aba aberta logada
-  window.addEventListener("storage", function(e) {
-    if (e.key === SESSION_KEY && e.newValue !== "active") {
-      showLogin();
-    }
-  });
-};
+// Função para mostrar tela de login
+function showLogin() {
+  document.getElementById("main-container").style.display = "none";
+  document.getElementById("login-container").style.display = "block";
+  localStorage.removeItem(SESSION_KEY);
+}
 
+// Função de login
 function login() {
   const u = document.getElementById("username").value;
   const p = document.getElementById("password").value;
@@ -109,23 +97,13 @@ function login() {
   }
 }
 
-function showMain() {
-  document.getElementById("login-container").style.display = "none";
-  document.getElementById("main-container").style.display = "block";
-  renderJogos();
-}
-
-function showLogin() {
-  document.getElementById("main-container").style.display = "none";
-  document.getElementById("login-container").style.display = "block";
-  localStorage.removeItem(SESSION_KEY);
-}
-
+// Função para logout
 function logout() {
   localStorage.removeItem(SESSION_KEY);
   showLogin();
 }
 
+// Renderizar lista de jogos
 function renderJogos() {
   const list = document.getElementById("games-list");
   list.innerHTML = "";
@@ -152,7 +130,22 @@ function renderJogos() {
   });
 }
 
-// Ao fechar a aba ou navegador, remove a sessão
+// Evento único para carregar a página
+window.onload = function() {
+  if (localStorage.getItem(SESSION_KEY) === "active") {
+    showMain();
+  } else {
+    showLogin();
+  }
+  // Bloquear segunda aba aberta logada
+  window.addEventListener("storage", function(e) {
+    if (e.key === SESSION_KEY && e.newValue !== "active") {
+      showLogin();
+    }
+  });
+};
+
+// Remove a sessão ao fechar a aba ou navegador
 window.addEventListener("beforeunload", () => {
   localStorage.removeItem(SESSION_KEY);
 });
