@@ -4,6 +4,20 @@ const LOGINS = [
   { username: "nome2", password: "mudar123!123" }
 ];
 
+const SESSION_KEY = "xfut_session";
+
+// Força logout sempre que a página for carregada
+localStorage.removeItem(SESSION_KEY);
+
+// Checa login ao carregar
+window.onload = function() {
+  if (localStorage.getItem(SESSION_KEY) === "active") {
+    showMain();
+  } else {
+    showLogin();
+  }
+    // ...
+};
 // Lista de jogos e opções
 const jogos = [
     {
