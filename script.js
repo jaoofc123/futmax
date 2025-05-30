@@ -1,7 +1,7 @@
 const LOGINS = [
   { username: "admin", password: "Jotap123" },
-  { username: "nome", password: "mudar1234" },
-  { username: "nome2", password: "mudar1234" }
+  { username: "NOME", password: "MUDAR1234" },
+  { username: "NOME2", password: "MUDAR1234" }
 ];
 
 // Lista de jogos e opções
