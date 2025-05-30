@@ -1,14 +1,14 @@
 // Usuário e senha predefinidos
-const USERNAME = "xfut";
-const PASSWORD = "xfut123"; // Troque para a senha que quiser
+const USERNAME = "usuario";
+const PASSWORD = "mudar123"; // Troque para a senha que quiser
 
 // Lista de jogos e opções
 const jogos = [
   {
     nome: "Jogo do Palmeiras (off)",
     opcoes: [
-      { nome: "Opção 1", url: "https://site.com" },
-      { nome: "Opção 2", url: "https://site.com" }
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site2.com" }
     ]
   },
   {
@@ -17,8 +17,14 @@ const jogos = [
       { nome: "Opção 1", url: "https://embedflix.top/tv/espn-4" },
       { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br6.php" }
     ]
+  },
+  {
+    nome: "Jogo do Fortaleza (on)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://embedflix.top/tv/espn" },
+      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
+    ]
   }
-  // Adicione mais jogos aqui...
 ];
 
 // Controle de sessão via localStorage
