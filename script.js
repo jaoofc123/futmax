@@ -1,23 +1,21 @@
 // Usuário e senha predefinidos
-const USERNAME = "usuario123";
-const PASSWORD = "mudar123"; // Troque para a senha que quiser
+const USERNAME = "xfut";
+const PASSWORD = "xfut123"; // Troque para a senha que quiser
 
 // Lista de jogos e opções
 const jogos = [
   {
-    nome: "Jogo do Palmeiras",
+    nome: "Jogo do Palmeiras (off)",
     opcoes: [
-      { nome: "Opção 1", url: "https://site1.com" },
-      { nome: "Opção 2", url: "https://site2.com" },
-      { nome: "Opção 3", url: "https://site3.com" },
-      { nome: "Opção 4", url: "https://site4.com" }
+      { nome: "Opção 1", url: "https://site.com" },
+      { nome: "Opção 2", url: "https://site.com" }
     ]
   },
   {
-    nome: "Jogo do Flamengo",
+    nome: "Jogo do Atletico-Mg (on)",
     opcoes: [
-      { nome: "Opção 1", url: "https://site5.com" },
-      { nome: "Opção 2", url: "https://site6.com" }
+      { nome: "Opção 1", url: "https://embedflix.top/tv/espn-4" },
+      { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br6.php" }
     ]
   }
   // Adicione mais jogos aqui...
