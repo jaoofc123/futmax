@@ -1,11 +1,10 @@
 const LOGINS = [
-  { username: "admjao", password: "JP123!123" },
-  { username: "zanatta", password: "samuca2011" },
-  { username: "nome2", password: "mudar123!123" }
+  { username: "admjao", password: "SlAxMjMhMTIz" },         // "JP123!123" em Base64
+  { username: "zanatta", password: "c2FtdWNhMjAxMQ==" },    // "samuca2011" em Base64
+  { username: "nome2", password: "bXVkYXIxMjMhMTIz" }       // "mudar123!123" em Base64
 ];
 
 const SESSION_KEY = "xfut_session";
-
 
 // Lista de jogos e opções
 const jogos = [
@@ -123,7 +122,7 @@ function showLogin() {
   localStorage.removeItem(SESSION_KEY);
 }
 
-// Função de login
+// Função de login (com comparação Base64)
 function login() {
   const u = document.getElementById("username").value;
   const p = document.getElementById("password").value;
@@ -134,7 +133,10 @@ function login() {
     return;
   }
 
-  const isValid = LOGINS.some(login => login.username === u && login.password === p);
+  // Codifica a senha digitada em Base64
+  const encodedPass = btoa(p);
+
+  const isValid = LOGINS.some(login => login.username === u && login.password === encodedPass);
   if (isValid) {
     localStorage.setItem(SESSION_KEY, "active");
     showMain();
