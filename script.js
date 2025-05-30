@@ -24,6 +24,15 @@ const jogos = [
       { nome: "Opção 1", url: "https://embedflix.top/tv/espn" },
       { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
     ]
+  },  
+  {
+    nome: "Canais Fixos",
+    opcoes: [
+      { nome: "Globo Sp", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Espn 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
+      { nome: "SportTv", url: "https://embedflix.top/tv/sportv-hd" }
+      { nome: "TnT", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
+    ]
   }
 ];
 
