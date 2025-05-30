@@ -6,8 +6,6 @@ const LOGINS = [
 
 const SESSION_KEY = "xfut_session";
 
-// Força logout sempre que a página for carregada
-localStorage.removeItem(SESSION_KEY);
 
 // Lista de jogos e opções
 const jogos = [
