@@ -1,6 +1,6 @@
 // Usuário e senha predefinidos
-const USERNAME = "usuario";
-const PASSWORD = "mudar123"; // Troque para a senha que quiser
+const USERNAME = "admin";
+const PASSWORD = "Jotap123"; // Troque para a senha que quiser
 
 // Lista de jogos e opções
 const jogos = [
