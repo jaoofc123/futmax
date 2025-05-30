@@ -54,8 +54,7 @@ const jogos = [
   {
     nome: "UFC",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-1-hd" }
+      { nome: "Opção 1", url: "https://embedflix.top/tv/ufc-fight-pass-hd" }
     ]
   }
 ];
