@@ -1,6 +1,8 @@
-// Usuário e senha predefinidos
-const USERNAME = "admin";
-const PASSWORD = "Jotap123"; // Troque para a senha que quiser
+const LOGINS = [
+  { username: "admin", password: "Jotap123" },
+  { username: "user2", password: "senha2" },
+  { username: "user3", password: "senha3" }
+];
 
 // Lista de jogos e opções
 const jogos = [
@@ -70,7 +72,14 @@ function login() {
     return;
   }
 
-  if (u === USERNAME && p === PASSWORD) {
+const isValid = LOGINS.some(login => login.username === u && login.password === p);
+if (isValid) {
+  localStorage.setItem(SESSION_KEY, "active");
+  showMain();
+  msg.innerText = "";
+} else {
+  msg.innerText = "Usuário ou senha inválidos!";
+}
     localStorage.setItem(SESSION_KEY, "active");
     showMain();
     msg.innerText = "";
