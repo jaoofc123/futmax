@@ -19,15 +19,15 @@ const jogos = [
   {
     nome: "Vila Nova VS Novorizontino (30/05)",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/espn" },
+      { nome: "Opção 1", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" },
       { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
     ]
   },
   {
     nome: "Brasil(F) Vs Japão(F) (30/05)",
     opcoes: [
-      { nome: "Opção 1", url: "https://hlsplus.pro/play/prime.php?id=sportvalt" },
-      { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
     ]
   },
   {
@@ -47,7 +47,7 @@ const jogos = [
     {
     nome: "Cruzeiro VS Palmeiras (01/06)",
     opcoes: [
-      { nome: "Opção 1", url: "https://hlsplus.pro/play/prime.php?id=globoce },
+      { nome: "Opção 1", url: "https://hlsplus.pro/play/prime.php?id=globoce" },
       { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
     ]
   },
