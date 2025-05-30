@@ -54,7 +54,8 @@ const jogos = [
   {
     nome: "Canais Fixos",
     opcoes: [
-      { nome: "UFC", url: "https://embedflix.top/tv/ufc-fight-pass-hd" }
+      { nome: "UFC", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
+      { nome: "Globo Sp", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
     ]
   }
 ];
