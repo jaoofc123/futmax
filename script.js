@@ -203,3 +203,42 @@ function closeNotification() {
   const notif = document.getElementById("user-notification");
   if (notif) notif.style.display = "none";
 }
+function closeNotification() {
+  const notif = document.getElementById("user-notification");
+  if (notif) notif.style.display = "none";
+}
+
+// Adicione aqui:
+
+function handleSearch() {
+  const searchTerm = document.getElementById('search-input').value.toLowerCase();
+  renderJogos(searchTerm);
+}
+
+function renderJogos(filter = "") {
+  const list = document.getElementById("games-list");
+  list.innerHTML = "";
+  jogos
+    .filter(jogo => jogo.nome.toLowerCase().includes(filter))
+    .forEach(jogo => {
+      const block = document.createElement("div");
+      block.className = "game-block";
+      const title = document.createElement("h3");
+      title.innerText = jogo.nome;
+      block.appendChild(title);
+
+      const opcoes = document.createElement("div");
+      opcoes.className = "opcoes";
+      jogo.opcoes.forEach(opcao => {
+        const link = document.createElement("a");
+        link.href = opcao.url;
+        link.innerText = opcao.nome;
+        link.className = "opcao-link";
+        link.target = "_blank";
+        opcoes.appendChild(link);
+      });
+      block.appendChild(opcoes);
+
+      list.appendChild(block);
+    });
+}
