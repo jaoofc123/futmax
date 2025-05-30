@@ -112,6 +112,7 @@ const jogos = [
 function showMain() {
   document.getElementById("login-container").style.display = "none";
   document.getElementById("main-container").style.display = "block";
+  document.getElementById("notificacao-jogo").style.display = "block";
   renderJogos();
 }
 
