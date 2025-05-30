@@ -52,9 +52,9 @@ const jogos = [
     ]
   },
   {
-    nome: "UFC",
+    nome: "Canais Fixos",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/ufc-fight-pass-hd" }
+      { nome: "UFC", url: "https://embedflix.top/tv/ufc-fight-pass-hd" }
     ]
   }
 ];
