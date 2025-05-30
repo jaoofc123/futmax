@@ -72,14 +72,9 @@ function login() {
     return;
   }
 
-const isValid = LOGINS.some(login => login.username === u && login.password === p);
-if (isValid) {
-  localStorage.setItem(SESSION_KEY, "active");
-  showMain();
-  msg.innerText = "";
-} else {
-  msg.innerText = "Usuário ou senha inválidos!";
-}
+
+  const isValid = LOGINS.some(login => login.username === u && login.password === p);
+  if (isValid) {
     localStorage.setItem(SESSION_KEY, "active");
     showMain();
     msg.innerText = "";
