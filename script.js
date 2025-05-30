@@ -47,8 +47,8 @@ const jogos = [
     {
     nome: "Cruzeiro VS Palmeiras (01/06)",
     opcoes: [
-      { nome: "Opção 1", url: "https://hlsplus.pro/play/prime.php?id=globoce" },
-      { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site1.com" }
     ]
   },
     {
@@ -61,8 +61,8 @@ const jogos = [
   {
     nome: "Juventude VS Grêmio (01/06)",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site1.com" }
     ]
   },
     {
@@ -75,8 +75,8 @@ const jogos = [
   {
     nome: "Flamengo VS Fortaleza (01/06)",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site1.com" }
     ]
   },
     {
@@ -89,8 +89,8 @@ const jogos = [
   {
     nome: "Corinthians VS EC Vitória (01/06)",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site1.com" }
     ]
   },
     {
