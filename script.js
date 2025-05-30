@@ -12,7 +12,7 @@ const jogos = [
       { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
       { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
     ]
-  }
+  },
   {
     nome: "Jogo do Palmeiras (01/06)",
     opcoes: [
