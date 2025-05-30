@@ -17,38 +17,87 @@ const jogos = [
     ]
   },
   {
-    nome: "Jogo do Palmeiras (01/06)",
-    opcoes: [
-      { nome: "Opção 1", url: "https://site1.com" },
-      { nome: "Opção 2", url: "https://site2.com" }
-    ]
-  },
-  {
-    nome: "Jogo do Vila Nova VS Novorizontino (30/05)",
+    nome: "Vila Nova VS Novorizontino (30/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/espn" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/espn" }
+      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
     ]
   },
   {
-    nome: "Jogo do Brasil(F) Vs Japão(F) (30/05)",
+    nome: "Brasil(F) Vs Japão(F) (30/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://hlsplus.pro/play/prime.php?id=sportvalt" },
       { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
     ]
   },
   {
-    nome: "Jogo do Vasco da Gama Vs Bragantino (31/05)",
+    nome: "Vasco da Gama Vs Bragantino (31/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-2-hd" },
       { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=sportv" }
     ]
   },
   {
-    nome: "Jogo do Bahia VS São Paulo (31/05)",
+    nome: "Bahia VS São Paulo (31/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-2-hd" },
       { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-1-hd" }
+    ]
+  },
+    {
+    nome: "Cruzeiro VS Palmeiras (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://hlsplus.pro/play/prime.php?id=globoce },
+      { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
+    ]
+  },
+    {
+    nome: "Mirassol VS Sport Recife (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site2.com" }
+    ]
+  },
+  {
+    nome: "Juventude VS Grêmio (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
+    ]
+  },
+    {
+    nome: "Santos VS Botafogo (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site2.com" }
+    ]
+  },
+  {
+    nome: "Flamengo VS Fortaleza (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
+    ]
+  },
+    {
+    nome: "Ceará SC VS Atlético-Mg (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site2.com" }
+    ]
+  },
+  {
+    nome: "Corinthians VS EC Vitória (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
+    ]
+  },
+    {
+    nome: "Internacional VS Fluminense (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site2.com" }
     ]
   },
   {
