@@ -146,3 +146,8 @@ window.onload = function() {
 window.addEventListener("beforeunload", () => {
   localStorage.removeItem(SESSION_KEY);
 });
+
+function closeNotification() {
+  const notif = document.getElementById("user-notification");
+  if (notif) notif.style.display = "none";
+}
