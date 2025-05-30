@@ -1,6 +1,6 @@
 // Usuário e senha predefinidos
-const USERNAME = "xfut";
-const PASSWORD = "xfut123"; // Troque para a senha que quiser
+const USERNAME = "usuario123";
+const PASSWORD = "mudar123"; // Troque para a senha que quiser
 
 // Lista de jogos e opções
 const jogos = [
