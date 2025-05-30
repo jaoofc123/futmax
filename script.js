@@ -6,6 +6,13 @@ const LOGINS = [
 
 // Lista de jogos e opções
 const jogos = [
+    {
+    nome: "Final da Champions | PSG VS Inter (31/05)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
+    ]
+  }
   {
     nome: "Jogo do Palmeiras (01/06)",
     opcoes: [
