@@ -66,12 +66,10 @@ function login() {
   const p = document.getElementById("password").value;
   const msg = document.getElementById("login-msg");
 
-  // Só deixa logar se não houver outra sessão ativa
   if (localStorage.getItem(SESSION_KEY) === "active") {
     msg.innerText = "Já existe um login ativo neste navegador!";
     return;
   }
-
 
   const isValid = LOGINS.some(login => login.username === u && login.password === p);
   if (isValid) {
