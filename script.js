@@ -5,33 +5,38 @@ const PASSWORD = "mudar123"; // Troque para a senha que quiser
 // Lista de jogos e opções
 const jogos = [
   {
-    nome: "Jogo do Palmeiras (off)",
+    nome: "Jogo do Palmeiras (01/06)",
     opcoes: [
       { nome: "Opção 1", url: "https://site1.com" },
       { nome: "Opção 2", url: "https://site2.com" }
     ]
   },
   {
-    nome: "Jogo do Atletico-Mg (on)",
+    nome: "Jogo do Vila Nova VS Novorizontino (30/05)",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/espn-4" },
-      { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br6.php" }
+      { nome: "Opção 1", url: "https://embedflix.top/tv/espn" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/espn" }
+    ]
+  },
+    {
+    nome: "Jogo do Brasil(F) Vs Japão(F) (30/05)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://hlsplus.pro/play/prime.php?id=sportvalt" },
+      { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
+    ]
+  }, 
+  {
+    nome: "Jogo do Vasco da Gama Vs Bragantino (31/05)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-2-hd" },
+      { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=sportv" }
     ]
   },
   {
-    nome: "Jogo do Fortaleza (on)",
+    nome: "Jogo do Bahia VS São Paulo (31/05)",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/espn" },
-      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
-    ]
-  },  
-  {
-    nome: "Canais Fixos",
-    opcoes: [
-      { nome: "Globo Sp", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Espn 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
-      { nome: "SportTv", url: "https://embedflix.top/tv/sportv-hd" }
-      { nome: "TnT", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
+      { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-2-hd" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-1-hd" }
     ]
   }
 ];
