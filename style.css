@@ -127,3 +127,31 @@ h2 {
 .close-notification:hover {
   color: #e74c3c;
 }
+.status-area {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+  font-weight: bold;
+}
+.status.countdown {
+  color: #0cd361;
+}
+.status.ao-vivo-agora {
+  color: #fff;
+  background: #0cd361;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+.status.ao-vivo-instant {
+  color: #222;
+  background: #ffd700;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+.status.encerrado {
+  color: #e74c3c;
+}
+.timer {
+  margin-left: 8px;
+  font-family: monospace;
+  font-size: 1em;
+}
