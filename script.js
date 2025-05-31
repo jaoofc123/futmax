@@ -10,7 +10,7 @@ const SESSION_KEY = "xfut_session";
 const jogos = [
   {
     nome: "Brasil(F) Vs Japão(F) (30/05)",
-    inicio: "2025-05-30T21:30:00-03:00", // Exemplo: 30/05/2025 19:00 (horário de Brasília)
+    inicio: "2025-05-30T21:30:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
       { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
@@ -32,7 +32,7 @@ const jogos = [
       { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-1-hd" }
     ]
   },
-    {
+  {
     nome: "Vasco VS Bragantino (31/05)",
     inicio: "2025-05-31T21:00:00-03:00",
     opcoes: [
@@ -106,7 +106,7 @@ const jogos = [
   },
   {
     nome: "Canais Fixos",
-    inicio: null, // Não tem contagem para canais fixos
+    inicio: null,
     opcoes: [
       { nome: "UFC", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
       { nome: "Globo Sp", url: "https://embedflix.top/tv/globo-sp" }
@@ -114,7 +114,9 @@ const jogos = [
   }
 ];
 
-// Função para formatar tempo restante (hh:mm:ss)
+// Controle dos intervalos para cada jogo
+const intervalosJogos = {};
+
 function formatTime(ms) {
   let totalSeconds = Math.floor(ms / 1000);
   let hours = Math.floor(totalSeconds / 3600);
@@ -123,7 +125,6 @@ function formatTime(ms) {
   return [hours, minutes, seconds].map(n => String(n).padStart(2, '0')).join(':');
 }
 
-// Função para mostrar a tela principal
 function showMain() {
   document.getElementById("login-container").style.display = "none";
   document.getElementById("main-container").style.display = "block";
@@ -131,14 +132,12 @@ function showMain() {
   renderJogos();
 }
 
-// Função para mostrar tela de login
 function showLogin() {
   document.getElementById("main-container").style.display = "none";
   document.getElementById("login-container").style.display = "block";
   localStorage.removeItem(SESSION_KEY);
 }
 
-// Função de login (com comparação Base64)
 function login() {
   const u = document.getElementById("username").value;
   const p = document.getElementById("password").value;
@@ -147,7 +146,13 @@ function login() {
     msg.innerText = "Já existe um login ativo neste navegador!";
     return;
   }
-  const encodedPass = btoa(p);
+  let encodedPass = "";
+  try {
+    encodedPass = btoa(p);
+  } catch (e) {
+    msg.innerText = "Senha contém caracteres inválidos!";
+    return;
+  }
   const isValid = LOGINS.some(login => login.username === u && login.password === encodedPass);
   if (isValid) {
     localStorage.setItem(SESSION_KEY, "active");
@@ -158,18 +163,26 @@ function login() {
   }
 }
 
-// Função para logout
 function logout() {
   localStorage.removeItem(SESSION_KEY);
   showLogin();
 }
 
-// Função principal para renderizar lista de jogos
+// Função para normalizar string (remover acentos)
+function normalizar(str) {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
 function renderJogos(filter = "") {
   const list = document.getElementById("games-list");
   list.innerHTML = "";
+  // Limpa todos intervalos antigos
+  for (const idx in intervalosJogos) {
+    clearInterval(intervalosJogos[idx]);
+    delete intervalosJogos[idx];
+  }
   jogos
-    .filter(jogo => jogo.nome.toLowerCase().includes(filter))
+    .filter(jogo => normalizar(jogo.nome).includes(normalizar(filter)))
     .forEach((jogo, idx) => {
       const block = document.createElement("div");
       block.className = "game-block";
@@ -178,7 +191,6 @@ function renderJogos(filter = "") {
       title.innerText = jogo.nome;
       block.appendChild(title);
 
-      // Se houver inicio definido, cria a área de contagem
       let statusArea = null;
       if (jogo.inicio) {
         statusArea = document.createElement("div");
@@ -201,7 +213,6 @@ function renderJogos(filter = "") {
 
       list.appendChild(block);
 
-      // Se tem contagem, inicializa
       if (jogo.inicio) {
         iniciarContagemJogo(jogo, idx);
       }
@@ -210,7 +221,6 @@ function renderJogos(filter = "") {
 
 const TEMPO_JOGO_MS = 100 * 60 * 1000; // 1h40min em ms
 
-// Função para iniciar contagem regressiva individual por jogo
 function iniciarContagemJogo(jogo, idx) {
   const statusArea = document.getElementById(`status-jogo-${idx}`);
   if (!statusArea) return;
@@ -220,14 +230,12 @@ function iniciarContagemJogo(jogo, idx) {
     const inicio = new Date(jogo.inicio);
     const diff = inicio - agora;
     if (diff > 0) {
-      // Menos de 5 minutos para começar
       if (diff <= 5 * 60 * 1000) {
         statusArea.innerHTML = `<span class="status ao-vivo-instant">AO VIVO EM INSTANTE</span> <span class="timer">${formatTime(diff)}</span>`;
       } else {
         statusArea.innerHTML = `<span class="status countdown">Começa em: <span class="timer">${formatTime(diff)}</span></span>`;
       }
     } else if (diff > -TEMPO_JOGO_MS) {
-      // Já começou, está AO VIVO
       const tempoRestante = TEMPO_JOGO_MS + diff;
       if (tempoRestante > 0) {
         statusArea.innerHTML = `<span class="status ao-vivo-agora">🟢 AO VIVO AGORA</span> <span class="timer">${formatTime(tempoRestante)}</span>`;
@@ -239,10 +247,11 @@ function iniciarContagemJogo(jogo, idx) {
     }
   }
   updateStatus();
-  setInterval(updateStatus, 1000);
+  // Limpa intervalo antigo se houver
+  if (intervalosJogos[idx]) clearInterval(intervalosJogos[idx]);
+  intervalosJogos[idx] = setInterval(updateStatus, 1000);
 }
 
-// Evento único para carregar a página
 window.onload = function() {
   if (localStorage.getItem(SESSION_KEY) === "active") {
     showMain();
@@ -256,7 +265,6 @@ window.onload = function() {
   });
 };
 
-// Remove a sessão ao fechar a aba ou navegador
 window.addEventListener("beforeunload", () => {
   localStorage.removeItem(SESSION_KEY);
 });
@@ -266,8 +274,7 @@ function closeNotification() {
   if (notif) notif.style.display = "none";
 }
 
-// Pesquisa de jogos filtrados
 function handleSearch() {
-  const searchTerm = document.getElementById('search-input').value.toLowerCase();
+  const searchTerm = document.getElementById('search-input').value;
   renderJogos(searchTerm);
 }
