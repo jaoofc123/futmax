@@ -217,7 +217,7 @@ function renderJogos(filter = "") {
     });
 }
 
-const TEMPO_JOGO_MS = 100 * 60 * 1000; // 1h40min em ms
+const TEMPO_JOGO_MS = 115 * 60 * 1000; // 1h55min em ms
 
 function iniciarContagemJogo(jogo, idx) {
   const statusArea = document.getElementById(`status-jogo-${idx}`);
