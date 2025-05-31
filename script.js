@@ -9,35 +9,32 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
   {
-    nome: "Brasil(F) Vs Japão(F) (30/05)",
-    inicio: "2025-05-30T21:30:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
-    ]
-  },
-  {
     nome: "Final da Champions | PSG VS Inter (31/05)",
     inicio: "2025-05-31T16:00:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
+      { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/hd/hd10.php" },
+      { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/pt/sporttv5.php" },
+      { nome: "Opção 4", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
+      { nome: "Opção 5", url: "https://nossoplayeronlinehd.lat/tv/tnt" }
     ]
   },
   {
     nome: "Bahia VS São Paulo (31/05)",
     inicio: "2025-05-31T18:30:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-2-hd" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-1-hd" }
+      { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-1-hd" },
+      { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" },
+      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere-3" }
     ]
   },
   {
     nome: "Vasco VS Bragantino (31/05)",
     inicio: "2025-05-31T21:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
+      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/tv/premiere" }
     ]
   },
   {
@@ -108,7 +105,8 @@ const jogos = [
     nome: "Canais Fixos",
     inicio: null,
     opcoes: [
-      { nome: "UFC", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
+      { nome: "UFC 1", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
+      { nome: "UFC 2", url: "https://nossoplayeronlinehd.com/tv/ufcfightpass" },
       { nome: "Globo Sp", url: "https://embedflix.top/tv/globo-sp" }
     ]
   }
