@@ -1,7 +1,7 @@
 const LOGINS = [
-  { username: "admjao", password: "SlAxMjMhMTIz" },         // "JP123!123" em Base64
-  { username: "zanatta", password: "c2FtdWNhMjAxMQ==" },    // "samuca2011" em Base64
-  { username: "nome2", password: "bXVkYXIxMjMhMTIz" }       // "mudar123!123" em Base64
+  { username: "admjao", password: "SlAxMjMhMTIz" },
+  { username: "zanatta", password: "c2FtdWNhMjAxMQ==" },
+  { username: "nome2", password: "bXVkYXIxMjMhMTIz" }
 ];
 
 const SESSION_KEY = "xfut_session";
@@ -9,24 +9,17 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções
 const jogos = [
   {
-    nome: "Final da Champions | PSG VS Inter (31/05)",
-    opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
-    ]
-  },
-  {
-    nome: "Vila Nova VS Novorizontino (30/05)",
-    opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" },
-      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" }
-    ]
-  },
-  {
     nome: "Brasil(F) Vs Japão(F) (30/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
       { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
+    ]
+  },
+    {
+    nome: "Final da Champions | PSG VS Inter (31/05)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
     ]
   },
   {
