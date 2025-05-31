@@ -3,61 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Xfut</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="login-container" class="center-box">
     <div id="user-notification" class="user-notification">
-  <span>Estamos Sempre Trabalhando Para Melhorar Seu Uso.</span>
-  <button class="close-notification" onclick="closeNotification()">×</button>
-</div>
+      <span>Estamos Sempre Trabalhando Para Melhorar Seu Uso.</span>
+      <button class="close-notification" onclick="closeNotification()">×</button>
+    </div>
     <div id="login-notice" class="login-notice">
-  Assista aos jogos mais importantes, como a final da Champions, por apenas <b>R$5,90/mês!</b> Futebol pra você e pra todo mundo!
-</div>
+      Assista aos jogos mais importantes, como a final da Champions, por apenas <b>R$5,90/mês!</b> Futebol pra você e pra todo mundo!
+    </div>
     <h2>Login Xfut</h2>
-    <input type="text" id="username" placeholder="Usuário">
-    <input type="password" id="password" placeholder="Senha">
+    <input type="text" id="username" placeholder="Usuário" autocomplete="username">
+    <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
     <button onclick="login()">Entrar</button>
     <p id="login-msg" class="error"></p>
   </div>
-
   <div id="main-container" class="center-box" style="display: none;">
     <h2>Lista de Jogos do Xfut</h2>
     <div style="display: flex; gap: 8px; margin-bottom: 16px;">
-  <input 
-    type="text" 
-    id="search-input" 
-    placeholder="Pesquisar jogos..." 
-    oninput="handleSearch()" 
-    onkeydown="if(event.key === 'Enter'){ handleSearch(); }"
-    style="flex: 1; padding: 8px; border-radius: 6px; border: none;"
-  >
-  <button onclick="handleSearch()" id="search-btn" style="padding: 8px 16px; border-radius: 6px; background: #0cd361; color: #222; border: none; font-weight: bold; cursor: pointer;">
-    Pesquisar
-  </button>
-</div>
-<div id="games-list"></div>
-<p id="games-info" style="margin-top: 16px;">
-  Temos jogos da Seleção Brasileira Feminina e Masculina, Finais de Campeonatos Nacionais e Internacionais, além de partidas da Copa do Brasil, da Libertadores e da Sul-Americana dos Times Brasileiros. E, é claro, o Brasileirão Série A que não poderia ficar de fora!
-</p>
-<button onclick="logout()" class="logout-btn">Sair</button>
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Pesquisar jogos..." 
+        oninput="handleSearch()" 
+        onkeydown="if(event.key === 'Enter'){ handleSearch(); }"
+        style="flex: 1; padding: 8px; border-radius: 6px; border: none;"
+      >
+      <button onclick="handleSearch()" id="search-btn" style="padding: 8px 16px; border-radius: 6px; background: #0cd361; color: #222; border: none; font-weight: bold; cursor: pointer;">
+        Pesquisar
+      </button>
+    </div>
+    <div id="games-list"></div>
+    <p id="games-info" style="margin-top: 16px;">
+      Temos jogos da Seleção Brasileira Feminina e Masculina, Finais de Campeonatos Nacionais e Internacionais, além de partidas da Copa do Brasil, da Libertadores e da Sul-Americana dos Times Brasileiros!
+    </p>
+    <button onclick="logout()" class="logout-btn">Sair</button>
   </div>
-
   <script src="script.js"></script>
-<div id="notificacao-jogo" style="
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: #292929;
-    color: #fff;
-    padding: 16px 24px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    z-index: 9999;
-    max-width: 320px;
-">
-    Ao clicar na opção de streaming (1) ou (2), você será direcionado para o jogo. <br>
-    Porém, tudo o que abrir ao clicar na aba do jogo deve ser fechado, pois são apenas propagandas.
-</div>
+  <div id="notificacao-jogo" style="
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #292929;
+      color: #fff;
+      padding: 16px 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      z-index: 9999;
+      max-width: 320px;
+  ">
+      Ao clicar na opção de streaming (1) ou (2), você será direcionado para o jogo. <br>
+      Porém, tudo o que abrir ao clicar na aba do jogo deve ser fechado, pois são apenas propagandas.
+  </div>
 </body>
 </html>
