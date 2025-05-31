@@ -21,7 +21,7 @@ const jogos = [
     inicio: "2025-05-31T16:00:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
+      { nome: "Opção 2*", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
       { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/tv/tnt" },
       { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/pt/sporttv5.php" },
       { nome: "Opção 5", url: "https://embedflix.top/infra.php?url=/channels/hd/hd10.php" }
