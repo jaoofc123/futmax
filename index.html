@@ -5,9 +5,73 @@
   <title>Xfut</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilo opcional para a sidebar e header */
+    .sidebar {
+      width: 64px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: #fafafa;
+      border-right: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      z-index: 100;
+    }
+    .sidebar img, .header-logo img, .login-logo img {
+      height: 32px;
+    }
+    .header-logo {
+      width: 100%;
+      height: 56px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      padding-left: 76px; /* Espaço para sidebar */
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 99;
+    }
+    .login-logo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .sidebar { width: 44px; padding-top: 8px; }
+      .header-logo { padding-left: 54px; height: 44px;}
+      .sidebar img, .header-logo img, .login-logo img { height: 28px;}
+    }
+    /* Ajuste para centralizar os containers com sidebar */
+    .center-box { margin-left: 64px; }
+    @media (max-width: 600px) {
+      .center-box { margin-left: 44px; }
+    }
+  </style>
 </head>
 <body>
+  <!-- Sidebar fixa à esquerda -->
+  <div class="sidebar">
+    <a href="index.html">
+      <img src="logo2.png" alt="Logo">
+    </a>
+  </div>
+  <!-- Header no topo -->
+  <div class="header-logo">
+    <a href="index.html">
+      <img src="logo2.png" alt="Logo">
+    </a>
+  </div>
+  <!-- Login -->
   <div id="login-container" class="center-box">
+    <div class="login-logo">
+      <a href="index.html">
+        <img src="logo2.png" alt="Logo">
+      </a>
+    </div>
     <div id="user-notification" class="user-notification">
       <span>Estamos Sempre Trabalhando Para Melhorar Seu Uso.</span>
       <button class="close-notification" onclick="closeNotification()">×</button>
