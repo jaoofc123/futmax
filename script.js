@@ -12,7 +12,7 @@ const jogos = [
     nome: "Brasil(F) Vs Japão(F) (30/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp }
     ]
   },
     {
