@@ -32,7 +32,78 @@ const jogos = [
       { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-1-hd" }
     ]
   },
-  // ... repita para cada jogo, sempre adicionando o campo "inicio"
+    {
+    nome: "Vasco VS Bragantino (31/05)",
+    inicio: "2025-05-31T21:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" }
+    ]
+  },
+  {
+    nome: "Mirassol Vs Sport Recife (01/06)",
+    inicio: "2025-06-01T11:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Juventude Vs Grêmio (01/06)",
+    inicio: "2025-06-01T16:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Santos Vs Botafogo (01/06)",
+    inicio: "2025-06-01T16:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Flamengo Vs Fortaleza (01/06)",
+    inicio: "2025-06-01T18:30:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Ceará SC Vs Atlético-MG (01/06)",
+    inicio: "2025-06-01T18:30:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Corinthians Vs EC Vitória (01/06)",
+    inicio: "2025-06-01T18:30:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Cruzeiro Vs Palmeiras (01/06)",
+    inicio: "2025-06-01T19:30:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Internacional Vs Fluminense (01/06)",
+    inicio: "2025-06-01T20:30:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
   {
     nome: "Canais Fixos",
     inicio: null, // Não tem contagem para canais fixos
