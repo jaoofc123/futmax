@@ -10,7 +10,7 @@ const SESSION_KEY = "xfut_session";
 const jogos = [
   {
     nome: "Brasil(F) Vs Japão(F) (30/05)",
-    inicio: "2025-05-30T19:00:00-03:00", // Exemplo: 30/05/2025 19:00 (horário de Brasília)
+    inicio: "2025-05-30T21:30:00-03:00", // Exemplo: 30/05/2025 19:00 (horário de Brasília)
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
       { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
