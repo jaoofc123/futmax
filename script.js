@@ -22,9 +22,9 @@ const jogos = [
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
       { nome: "Opção 2*", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
-      { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/tv/tnt" },
-      { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/pt/sporttv5.php" },
-      { nome: "Opção 5", url: "https://embedflix.top/infra.php?url=/channels/hd/hd10.php" }
+      { nome: "Opção 3*", url: "https://nossoplayeronlinehd.lat/tv/tnt" },
+      { nome: "Opção 4*", url: "https://embedflix.top/infra.php?url=/channels/hd/hd10.php" },
+      { nome: "Opção 5*", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" }
     ]
   },
   {
@@ -33,16 +33,19 @@ const jogos = [
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-1-hd" },
       { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" },
-      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere-3" }
+      { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere" },
+      { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere-3" }
     ]
   },
   {
     nome: "Vasco VS Bragantino (31/05)",
     inicio: "2025-05-31T21:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
-      { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/tv/premiere" }
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
+      { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" },
+      { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br5.php" },
+      { nome: "Opção 5", url: "https://embedflix.top/tv/sportv-hd" },
     ]
   },
   {
@@ -50,7 +53,8 @@ const jogos = [
     inicio: "2025-06-01T11:00:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" }
     ]
   },
   {
@@ -58,7 +62,8 @@ const jogos = [
     inicio: "2025-06-01T16:00:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" }
     ]
   },
   {
@@ -66,7 +71,8 @@ const jogos = [
     inicio: "2025-06-01T16:00:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" }
     ]
   },
   {
@@ -74,7 +80,8 @@ const jogos = [
     inicio: "2025-06-01T18:30:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" }
     ]
   },
   {
@@ -82,7 +89,8 @@ const jogos = [
     inicio: "2025-06-01T18:30:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" }
     ]
   },
   {
@@ -90,7 +98,8 @@ const jogos = [
     inicio: "2025-06-01T18:30:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" }
     ]
   },
   {
@@ -98,7 +107,8 @@ const jogos = [
     inicio: "2025-06-01T19:30:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" }
     ]
   },
   {
@@ -106,7 +116,8 @@ const jogos = [
     inicio: "2025-06-01T20:30:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" }
     ]
   },
   {
