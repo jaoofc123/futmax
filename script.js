@@ -1,15 +1,15 @@
 const LOGINS = [
   { username: "admjao", password: "SlAxMjMhMTIz" },
   { username: "zanatta", password: "c2FtdWNhMjAxMQ==" },
-  { username: "nome2", password: "bXVkYXIxMjMhMTIz" },
-  { username: "nome3", password: "bXVkYXIxMjM=" },         
-  { username: "nome4", password: "bXVkYXIxMjM0" },        
-  { username: "nome5", password: "bXVkYXIxMjM0NQ==" },    
-  { username: "nome6", password: "bXVkYXIxMjM0NTY=" },    
-  { username: "nome7", password: "bXVkYXIxMjM0NTY3" },    
-  { username: "nome8", password: "bXVkYXIxMjM0NTY3OA==" },
-  { username: "nome9", password: "bXVkYXIxMjM0NTY3ODk=" },
-  { username: "nome10", password: "bXVkYXIxMjM0NTY3ODkw" }
+  { username: "nome1", password: "ZXVtdWRvMTIz" },
+  { username: "nome2", password: "ZXVtdWRvMTIz" },
+  { username: "nome3", password: "ZXVtdWRvMTIz" },         
+  { username: "nome4", password: "ZXVtdWRvMTIz" },        
+  { username: "nome5", password: "ZXVtdWRvMTIz" },    
+  { username: "nome6", password: "ZXVtdWRvMTIz" },    
+  { username: "nome7", password: "ZXVtdWRvMTIz" },    
+  { username: "nome8", password: "ZXVtdWRvMTIz" },
+  { username: "nome9", password: "ZXVtdWRvMTIz" }
 ];
 
 const SESSION_KEY = "xfut_session";
