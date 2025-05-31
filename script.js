@@ -8,7 +8,7 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções
 const jogos = [
-  {
+    {
     nome: "Brasil(F) Vs Japão(F) (30/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
@@ -22,14 +22,7 @@ const jogos = [
       { nome: "Opção 2", url: "https://embedflix.top/tv/tnt" }
     ]
   },
-  {
-    nome: "Vasco da Gama Vs Bragantino (31/05)",
-    opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-2-hd" },
-      { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=sportv" }
-    ]
-  },
-  {
+    {
     nome: "Bahia VS São Paulo (31/05)",
     opcoes: [
       { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-2-hd" },
@@ -37,10 +30,10 @@ const jogos = [
     ]
   },
     {
-    nome: "Cruzeiro VS Palmeiras (01/06)",
+    nome: "Vasco da Gama Vs Bragantino (31/05)",
     opcoes: [
-      { nome: "Opção 1", url: "https://site1.com" },
-      { nome: "Opção 2", url: "https://site1.com" }
+      { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-2-hd" },
+      { nome: "Opção 2", url: "https://hlsplus.pro/play/prime.php?id=sportv" }
     ]
   },
     {
@@ -50,7 +43,7 @@ const jogos = [
       { nome: "Opção 2", url: "https://site2.com" }
     ]
   },
-  {
+    {
     nome: "Juventude VS Grêmio (01/06)",
     opcoes: [
       { nome: "Opção 1", url: "https://site1.com" },
@@ -64,7 +57,7 @@ const jogos = [
       { nome: "Opção 2", url: "https://site2.com" }
     ]
   },
-  {
+    {
     nome: "Flamengo VS Fortaleza (01/06)",
     opcoes: [
       { nome: "Opção 1", url: "https://site1.com" },
@@ -78,8 +71,15 @@ const jogos = [
       { nome: "Opção 2", url: "https://site2.com" }
     ]
   },
-  {
+    {
     nome: "Corinthians VS EC Vitória (01/06)",
+    opcoes: [
+      { nome: "Opção 1", url: "https://site1.com" },
+      { nome: "Opção 2", url: "https://site1.com" }
+    ]
+  },
+    {
+    nome: "Cruzeiro VS Palmeiras (01/06)",
     opcoes: [
       { nome: "Opção 1", url: "https://site1.com" },
       { nome: "Opção 2", url: "https://site1.com" }
@@ -96,7 +96,7 @@ const jogos = [
     nome: "Canais Fixos",
     opcoes: [
       { nome: "UFC", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
-      { nome: "Globo Sp", url: "https://hlsplus.pro/play/prime.php?id=globoce" }
+      { nome: "Globo Sp", url: "https://embedflix.top/tv/globo-sp" }
     ]
   }
 ];
