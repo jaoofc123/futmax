@@ -21,9 +21,10 @@ const jogos = [
     inicio: "2025-06-01T11:00:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-2-hd" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/prfc-4-hd" },
+      { nome: "Opção 4", url: "https://embedflix.top/tv/prfc-3-hd" },
+      { nome: "Opção 5", url: "https://embedflix.top/tv/sportv-hd" }
     ]
   },
   {
