@@ -251,7 +251,7 @@ function renderJogos(filter = "") {
     });
 }
 
-const TEMPO_JOGO_MS = 115 * 60 * 1000; // 1h55min em ms
+const TEMPO_JOGO_MS = 120 * 60 * 1000; // 2 horas em ms
 
 function iniciarContagemJogo(jogo, idx) {
   const statusArea = document.getElementById(`status-jogo-${idx}`);
@@ -269,11 +269,11 @@ function iniciarContagemJogo(jogo, idx) {
       }
     } else if (diff > -TEMPO_JOGO_MS) {
       const tempoRestante = TEMPO_JOGO_MS + diff;
-      if (tempoRestante > 0) {
-        statusArea.innerHTML = `<span class="status ao-vivo-agora">🟢 AO VIVO AGORA</span> <span class="timer">${formatTime(tempoRestante)}</span>`;
-      } else {
-        statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
-      }
+    if (tempoRestante > 0) {
+      statusArea.innerHTML = `<span class="status ao-vivo-agora">🟢 AO VIVO AGORA</span>`;
+    } else {
+      statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
+}
     } else {
       statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
     }
