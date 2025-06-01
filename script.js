@@ -168,18 +168,6 @@ function formatTime(ms) {
   return [hours, minutes, seconds].map(n => String(n).padStart(2, '0')).join(':');
 }
 
-function showMain() {
-  document.getElementById("login-container").style.display = "none";
-  document.getElementById("main-container").style.display = "block";
-  document.getElementById("notificacao-jogo").style.display = "block";
-  renderJogos();
-}
-
-function showLogin() {
-  document.getElementById("main-container").style.display = "none";
-  document.getElementById("login-container").style.display = "block";
-  localStorage.removeItem(SESSION_KEY);
-}
 
 function login() {
   const u = document.getElementById("username").value;
@@ -320,4 +308,41 @@ function closeNotification() {
 function handleSearch() {
   const searchTerm = document.getElementById('search-input').value;
   renderJogos(searchTerm);
+}
+
+function setupRodapeScroll() {
+  const rodape = document.querySelector('.rodape-moderno');
+  function verificarRodape() {
+    // Só ativa se a tela da lista de jogos estiver visível
+    if (document.getElementById("main-container").style.display === "block") {
+      // Chegou no fim da página? (com margem de 2px para tolerância)
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) {
+        rodape.style.display = "block";
+      } else {
+        rodape.style.display = "none";
+      }
+    } else {
+      rodape.style.display = "none";
+    }
+  }
+  window.addEventListener('scroll', verificarRodape);
+  window.addEventListener('resize', verificarRodape);
+  verificarRodape(); // Checa inicialmente
+}
+
+// Só chama o setup quando mostrar a lista de jogos
+function showMain() {
+  document.getElementById("login-container").style.display = "none";
+  document.getElementById("main-container").style.display = "block";
+  document.getElementById("notificacao-jogo").style.display = "block";
+  renderJogos();
+  setupRodapeScroll(); // <- ADICIONE ESTA LINHA
+}
+
+// Quando voltar para o login, esconde o rodapé
+function showLogin() {
+  document.getElementById("main-container").style.display = "none";
+  document.getElementById("login-container").style.display = "block";
+  localStorage.removeItem(SESSION_KEY);
+  document.querySelector('.rodape-moderno').style.display = "none"; // <- ADICIONE ESTA LINHA
 }
