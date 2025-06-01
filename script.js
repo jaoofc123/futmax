@@ -54,7 +54,7 @@ const jogos = [
       { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/premiere" },
       { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos1" },
       { nome: "Opção 3", url: "https://daddylive.dad/futemax/stream-88.php" },
-      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br1.php }
+      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br1.php" }
     ]
   },
   {
