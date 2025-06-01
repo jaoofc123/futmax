@@ -157,7 +157,6 @@ const jogos = [
   }
 ];
 
-// Controle dos intervalos para cada jogo
 const intervalosJogos = {};
 
 function formatTime(ms) {
@@ -167,7 +166,6 @@ function formatTime(ms) {
   let seconds = totalSeconds % 60;
   return [hours, minutes, seconds].map(n => String(n).padStart(2, '0')).join(':');
 }
-
 
 function login() {
   const u = document.getElementById("username").value;
@@ -310,6 +308,8 @@ function handleSearch() {
   renderJogos(searchTerm);
 }
 
+// ----------- CONTROLE DO RODAPÉ ---------------
+
 function setupRodapeScroll() {
   const rodape = document.querySelector('.rodape-moderno');
   function verificarRodape() {
@@ -330,19 +330,23 @@ function setupRodapeScroll() {
   verificarRodape(); // Checa inicialmente
 }
 
-// Só chama o setup quando mostrar a lista de jogos
+function showLogin() {
+  document.getElementById("main-container").style.display = "none";
+  document.getElementById("login-container").style.display = "block";
+  localStorage.removeItem(SESSION_KEY);
+  const rodape = document.querySelector('.rodape-moderno');
+  rodape.classList.add('rodape-fixa');
+  rodape.style.display = "block";
+}
+
 function showMain() {
   document.getElementById("login-container").style.display = "none";
   document.getElementById("main-container").style.display = "block";
   document.getElementById("notificacao-jogo").style.display = "block";
   renderJogos();
-  setupRodapeScroll(); // <- ADICIONE ESTA LINHA
+  const rodape = document.querySelector('.rodape-moderno');
+  rodape.classList.remove('rodape-fixa');
+  setupRodapeScroll();
 }
 
-// Quando voltar para o login, esconde o rodapé
-function showLogin() {
-  document.getElementById("main-container").style.display = "none";
-  document.getElementById("login-container").style.display = "block";
-  localStorage.removeItem(SESSION_KEY);
-  document.querySelector('.rodape-moderno').style.display = "none"; // <- ADICIONE ESTA LINHA
-}
+// -----------------------------------------------------
