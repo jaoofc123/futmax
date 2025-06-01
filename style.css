@@ -3,7 +3,9 @@ body {
   background: linear-gradient(120deg, #191919 0%, #292929 100%);
   color: #f5f5f5;
   margin: 0;
-  padding: 0;
+  padding: 0 0 100px 0; /* já reserva espaço pro rodapé */
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 /* Central container */
@@ -11,16 +13,19 @@ body {
   background: #232323;
   padding: 36px 32px;
   max-width: 420px;
-  margin: 80px auto;
+  width: 95vw;
+  min-width: 220px;
+  margin: 80px auto 32px auto;
   border-radius: 14px;
   box-shadow: 0 8px 32px #0008;
   text-align: center;
   border: 1.5px solid #ffd70055;
+  transition: max-width 0.3s, padding 0.3s, font-size 0.3s;
 }
 
 /* Inputs */
 input[type="text"], input[type="password"] {
-  width: 90%;
+  width: 92%;
   padding: 12px;
   margin: 10px 0;
   border: none;
@@ -34,6 +39,28 @@ input[type="text"], input[type="password"] {
 input[type="text"]:focus, input[type="password"]:focus {
   background: #232323;
   outline: 1.5px solid #ffd700;
+}
+
+/* Área de busca */
+.search-area {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+#search-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+#search-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #0cd361;
+  color: #222;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* Botões */
@@ -54,7 +81,8 @@ button.logout-btn {
   background: linear-gradient(90deg, #3a3a3a 60%, #000 100%);
   color: #ffd700;
 }
-button:hover {
+button:hover,
+#search-btn:hover {
   opacity: 0.97;
   filter: brightness(1.05);
 }
@@ -79,10 +107,13 @@ h2 {
 /* Opções */
 .opcoes {
   margin-top: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
 }
 .opcao-link {
   display: inline-block;
-  margin: 5px 10px 5px 0;
   background: #303030;
   color: #ffd700;
   text-decoration: none;
@@ -145,7 +176,7 @@ h2 {
 .close-notification {
   position: absolute;
   right: 12px;
-  top: 0px; /* diminua aqui */
+  top: 0px;
   background: transparent;
   border: none;
   font-size: 1.2em;
@@ -190,9 +221,24 @@ h2 {
   font-size: 1.03em;
 }
 
+/* Notificação fixa */
+.notificacao-jogo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #292929;
+  color: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 9999;
+  max-width: 320px;
+  font-size: 1em;
+}
+
 /* ===== Rodapé Moderno ===== */
 .rodape-moderno {
-  width: 100%;
+  width: 100vw;
   background: linear-gradient(90deg, #191919 0%, #383838 100%);
   color: #ffd700;
   text-align: center;
@@ -228,13 +274,17 @@ h2 {
   text-shadow: none;
 }
 
+/* ===== Responsividade ===== */
 @media (max-width: 600px) {
   .center-box {
-    padding: 18px 5px;
+    padding: 18px 2vw;
     max-width: 99vw;
+    margin: 16px auto 80px auto;
+    font-size: 1em;
   }
   .game-block {
     padding: 10px 4px;
+    font-size: 0.98em;
   }
   .login-notice, .user-notification {
     padding: 11px 4px;
@@ -244,7 +294,45 @@ h2 {
     font-size: 0.98rem;
     padding: 12px 3px;
   }
+  .notificacao-jogo {
+    top: auto;
+    bottom: 90px;
+    right: 5vw;
+    left: 5vw;
+    max-width: 90vw;
+    font-size: 0.98em;
+    padding: 10px;
+  }
+  input[type="text"], input[type="password"] {
+    width: 98%;
+    font-size: 1em;
+  }
+  button, .opcao-link, #search-btn {
+    font-size: 0.98em;
+    padding: 10px 12px;
+  }
+  .search-area {
+    flex-direction: column;
+    gap: 6px;
+  }
 }
-.rodape-moderno {
-  display: none;
+
+/* Telas MUITO grandes (TV, etc) */
+@media (min-width: 1200px) {
+  .center-box {
+    max-width: 600px;
+    font-size: 1.3em;
+    padding: 64px 48px;
+  }
+  .game-block {
+    font-size: 1.15em;
+    padding: 32px;
+  }
+  .rodape-moderno {
+    font-size: 1.3rem;
+  }
+  .notificacao-jogo {
+    font-size: 1.18em;
+    padding: 18px 32px;
+  }
 }
