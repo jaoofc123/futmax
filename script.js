@@ -31,70 +31,72 @@ const jogos = [
     nome: "Juventude Vs Grêmio (01/06)",
     inicio: "2025-06-01T16:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/globors" },
+      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/premiere4" },
+      { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/extra/eventos2" },
+      { nome: "Opção 4", url: "https://embedcanaistv.com/premiere4/" }
     ]
   },
   {
     nome: "Santos Vs Botafogo (01/06)",
     inicio: "2025-06-01T16:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/globosp" },
+      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/premiere3" },
+      { nome: "Opção 3", url: "https://embedcanaistv.com/globosp/" },
+      { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=globosp-globosaopaulo" }
     ]
   },
   {
     nome: "Flamengo Vs Fortaleza (01/06)",
     inicio: "2025-06-01T18:30:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/premiere" },
+      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos1" },
+      { nome: "Opção 3", url: "https://daddylive.dad/futemax/stream-88.php" },
+      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br1.php }
     ]
   },
   {
     nome: "Ceará SC Vs Atlético-MG (01/06)",
     inicio: "2025-06-01T18:30:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/premiere5" },
+      { nome: "Opção 2", url: "https://sportzonline.si/channels/bra/br4.php" },
+      { nome: "Opção 3", url: "https://embedcanaistv.com/premiere5/" },
+      { nome: "Opção 4", url: "https://nossoplayeronlinehd.lat/extra/eventos4" }
     ]
   },
   {
     nome: "Corinthians Vs EC Vitória (01/06)",
     inicio: "2025-06-01T18:30:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/record" },
+      { nome: "Opção 2", url: "https://embedcanaistv.com/recordsp/" },
+      { nome: "Opção 3", url: "https://embedcanaistv.com/premiere3/" },
+      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br3.php" }
     ]
   },
   {
     nome: "Cruzeiro Vs Palmeiras (01/06)",
     inicio: "2025-06-01T19:30:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/primevideo" },
+      { nome: "Opção 2", url: "https://embedcanaistv.com/amazonprimevideo/" },
+      { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/tv/primevideo" },
+      { nome: "Opção 4", url: "https://embedcanaistv.com/amazonprimevideo/" }
     ]
   },
   {
     nome: "Internacional Vs Fluminense (01/06)",
     inicio: "2025-06-01T20:30:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
+      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/premiere4" },
+      { nome: "Opção 3", url: "https://embedcanaistv.com/premiere4/" },
+      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br2.php" },
+      { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=sportv" },
+      { nome: "Opção 6", url: "https://daddylive.mp/futemax/stream-78.php" }
     ]
   },
   {
