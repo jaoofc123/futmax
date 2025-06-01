@@ -247,13 +247,23 @@ h2 {
   box-shadow: 0 -4px 24px rgba(24, 24, 24, 0.18);
   letter-spacing: 0.7px;
   border-top: 3px solid #ffd700;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
+  /* Corrigido: agora o rodapé não é fixo por padrão */
+  position: static;
+  left: unset;
+  bottom: unset;
+  z-index: unset;
   font-family: inherit;
   transition: background 0.4s, color 0.4s;
   text-shadow: 0 1px 8px #111, 0 0 2px #ffd70044;
+}
+
+/* NOVA CLASSE para rodapé fixo (login) */
+.rodape-fixa {
+  position: fixed !important;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100vw;
 }
 
 .rodape-moderno a {
