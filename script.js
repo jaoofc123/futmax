@@ -20,11 +20,11 @@ const jogos = [
     nome: "Mirassol Vs Sport Recife (01/06)",
     inicio: "2025-06-01T11:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/prfc-2-hd" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/prfc-4-hd" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/prfc-3-hd" },
-      { nome: "Opção 5", url: "https://embedflix.top/tv/sportv-hd" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/premiere" },
+      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos1" },
+      { nome: "Opção 3", url: "https://daddylive.dad/futemax/stream-88.php" },
+      { nome: "Opção 4", url: "https://embedcanaistv.com/premiereclubes/" },
+      { nome: "Opção 5", url: "https://sportzonline.si/channels/bra/br1.php" }
     ]
   },
   {
