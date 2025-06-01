@@ -17,38 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
   {
-    nome: "Final da Champions | PSG VS Inter (31/05)",
-    inicio: "2025-05-31T16:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/tnt" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
-      { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/tv/tnt" },
-      { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/hd/hd10.php" },
-      { nome: "Opção 5", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" }
-    ]
-  },
-  {
-    nome: "Bahia VS São Paulo (31/05)",
-    inicio: "2025-05-31T18:30:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://embedflix.top/tv/prfc-1-hd" },
-      { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" },
-      { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere" },
-      { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere-3" }
-    ]
-  },
-  {
-    nome: "Vasco VS Bragantino (31/05)",
-    inicio: "2025-05-31T21:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
-      { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" },
-      { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br5.php" },
-      { nome: "Opção 5", url: "https://embedflix.top/tv/sportv-hd" }
-    ]
-  },
-  {
     nome: "Mirassol Vs Sport Recife (01/06)",
     inicio: "2025-06-01T11:00:00-03:00",
     opcoes: [
@@ -121,6 +89,56 @@ const jogos = [
   {
     nome: "Internacional Vs Fluminense (01/06)",
     inicio: "2025-06-01T20:30:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Brasil(F) Vs Japão(F) (02/06)",
+    inicio: "2025-06-02T20:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Chapecoense Vs Amazonas (02/06)",
+    inicio: "2025-06-02T19:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Paysandu Vs Criciúma (02/06)",
+    inicio: "2025-06-02T21:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Botafogo Vs Ceará Sc (04/06)",
+    inicio: "2025-06-04T20:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+    ]
+  },
+  {
+    nome: "Confiança Vs Bahia (04/06)",
+    inicio: "2025-06-04T19:00:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
       { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
