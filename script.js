@@ -30,20 +30,21 @@ const jogos = [
     nome: "Brasil(F) Vs Japão(F) (02/06)",
     inicio: "2025-06-02T20:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "" },
-      { nome: "Opção 2", url: "" },
-      { nome: "Opção 3", url: "" },
-      { nome: "Opção 4", url: "" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
+      { nome: "Opção 2", url: "https://embedcanaistv.com/sportv/" },
+      { nome: "Opção 3", url: "https://daddylive.dad/futemax/stream-88.php" },
+      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br1.php" },
+      { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=sportv" }
     ]
   },
   {
     nome: "Paysandu Vs Criciúma (02/06)",
     inicio: "2025-06-02T21:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "" },
-      { nome: "Opção 2", url: "" },
-      { nome: "Opção 3", url: "" },
-      { nome: "Opção 4", url: "" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/extra/eventos3" },
+      { nome: "Opção 2", url: "https://sportzonline.si/channels/bra/br3.php" },
+      { nome: "Opção 3", url: "https://nossoplayeronlinehd.net/extra/eventos3" },
+      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br3.php" }
     ]
   },
     {
