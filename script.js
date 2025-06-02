@@ -17,16 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
   {
-    nome: "Cruzeiro Vs Palmeiras (01/06)",
-    inicio: "2025-06-01T19:30:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/primevideo" },
-      { nome: "Opção 2", url: "https://embedcanaistv.com/amazonprimevideo/" },
-      { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/tv/primevideo" },
-      { nome: "Opção 4", url: "https://embedcanaistv.com/amazonprimevideo/" }
-    ]
-  },
-  {
     nome: "Internacional Vs Fluminense (01/06)",
     inicio: "2025-06-01T20:30:00-03:00",
     opcoes: [
