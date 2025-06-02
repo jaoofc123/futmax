@@ -16,66 +16,54 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-  {
-    nome: "Internacional Vs Fluminense (01/06)",
-    inicio: "2025-06-01T20:30:00-03:00",
+    {
+    nome: "Chapecoense Vs Amazonas (02/06)",
+    inicio: "2025-06-02T19:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/premiere4" },
-      { nome: "Opção 3", url: "https://embedcanaistv.com/premiere4/" },
-      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br2.php" },
-      { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=sportv" },
-      { nome: "Opção 6", url: "https://daddylive.mp/futemax/stream-78.php" }
+      { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/espn" },
+      { nome: "Opção 2", url: "https://nossoplayeronlinehd.net/extra/eventos2" },
+      { nome: "Opção 3", url: "https://embedcanaistv.com/espn/" },
+      { nome: "Opção 4", url: "https://reidoscanais.cc/embed/?id=espn" }
     ]
   },
   {
     nome: "Brasil(F) Vs Japão(F) (02/06)",
     inicio: "2025-06-02T20:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
-    ]
-  },
-  {
-    nome: "Chapecoense Vs Amazonas (02/06)",
-    inicio: "2025-06-02T19:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "" },
+      { nome: "Opção 2", url: "" },
+      { nome: "Opção 3", url: "" },
+      { nome: "Opção 4", url: "" }
     ]
   },
   {
     nome: "Paysandu Vs Criciúma (02/06)",
     inicio: "2025-06-02T21:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "" },
+      { nome: "Opção 2", url: "" },
+      { nome: "Opção 3", url: "" },
+      { nome: "Opção 4", url: "" }
+    ]
+  },
+    {
+    nome: "Confiança Vs Bahia (04/06)",
+    inicio: "2025-06-04T19:00:00-03:00",
+    opcoes: [
+      { nome: "Opção 1", url: "" },
+      { nome: "Opção 2", url: "" },
+      { nome: "Opção 3", url: "" },
+      { nome: "Opção 4", url: "" }
     ]
   },
   {
     nome: "Botafogo Vs Ceará Sc (04/06)",
     inicio: "2025-06-04T20:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
-    ]
-  },
-  {
-    nome: "Confiança Vs Bahia (04/06)",
-    inicio: "2025-06-04T19:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-      { nome: "Opção 2", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
-      { nome: "Opção 4", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Opção 1", url: "" },
+      { nome: "Opção 2", url: "" },
+      { nome: "Opção 3", url: "" },
+      { nome: "Opção 4", url: "" }
     ]
   },
   {
