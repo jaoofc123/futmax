@@ -1,7 +1,7 @@
 const LOGINS = [
   { username: "admjao", password: "SlAxMjMhMTIz" },
   { username: "zanatta", password: "c2FtdWNhMjAxMQ==" }, // ASSINOU 30.05 | ACABA 30.07
-  { username: "teste", password: "dGVzdGVncmF0aXMwMTA2" },
+  { username: "nome1", password: "ZXVtdWRvMTIz" },
   { username: "nome2", password: "ZXVtdWRvMTIz" },
   { username: "nome3", password: "ZXVtdWRvMTIz" },         
   { username: "nome4", password: "ZXVtdWRvMTIz" },        
