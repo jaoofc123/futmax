@@ -51,20 +51,20 @@ const jogos = [
     nome: "Confiança Vs Bahia (04/06)",
     inicio: "2025-06-04T19:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "" },
-      { nome: "Opção 2", url: "" },
-      { nome: "Opção 3", url: "" },
-      { nome: "Opção 4", url: "" }
+      { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
     ]
   },
   {
     nome: "Botafogo Vs Ceará Sc (04/06)",
     inicio: "2025-06-04T20:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "" },
-      { nome: "Opção 2", url: "" },
-      { nome: "Opção 3", url: "" },
-      { nome: "Opção 4", url: "" }
+      { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
     ]
   },
   {
