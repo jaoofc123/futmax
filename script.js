@@ -17,67 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
   {
-    nome: "Mirassol Vs Sport Recife (01/06)",
-    inicio: "2025-06-01T11:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/premiere" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos1" },
-      { nome: "Opção 3", url: "https://daddylive.dad/futemax/stream-88.php" },
-      { nome: "Opção 4", url: "https://embedcanaistv.com/premiereclubes/" },
-      { nome: "Opção 5", url: "https://sportzonline.si/channels/bra/br1.php" }
-    ]
-  },
-  {
-    nome: "Juventude Vs Grêmio (01/06)",
-    inicio: "2025-06-01T16:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/globors" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/premiere4" },
-      { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/extra/eventos2" },
-      { nome: "Opção 4", url: "https://embedcanaistv.com/premiere4/" }
-    ]
-  },
-  {
-    nome: "Santos Vs Botafogo (01/06)",
-    inicio: "2025-06-01T16:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/globosp" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/premiere3" },
-      { nome: "Opção 3", url: "https://embedcanaistv.com/globosp/" },
-      { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=globosp-globosaopaulo" }
-    ]
-  },
-  {
-    nome: "Flamengo Vs Fortaleza (01/06)",
-    inicio: "2025-06-01T18:30:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/premiere" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos1" },
-      { nome: "Opção 3", url: "https://daddylive.dad/futemax/stream-88.php" },
-      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br1.php" }
-    ]
-  },
-  {
-    nome: "Ceará SC Vs Atlético-MG (01/06)",
-    inicio: "2025-06-01T18:30:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/premiere5" },
-      { nome: "Opção 2", url: "https://sportzonline.si/channels/bra/br4.php" },
-      { nome: "Opção 3", url: "https://embedcanaistv.com/premiere5/" },
-      { nome: "Opção 4", url: "https://nossoplayeronlinehd.lat/extra/eventos4" }
-    ]
-  },
-  {
-    nome: "Corinthians Vs EC Vitória (01/06)",
-    inicio: "2025-06-01T18:30:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/record" },
-      { nome: "Opção 2", url: "https://embedcanaistv.com/recordsp/" },
-      { nome: "Opção 3", url: "https://embedcanaistv.com/premiere3/" },
-      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br3.php" }
-    ]
-  },
-  {
     nome: "Cruzeiro Vs Palmeiras (01/06)",
     inicio: "2025-06-01T19:30:00-03:00",
     opcoes: [
