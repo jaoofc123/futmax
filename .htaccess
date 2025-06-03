@@ -7,3 +7,8 @@
   Header set Referrer-Policy "no-referrer-when-downgrade"
   Header set Permissions-Policy "geolocation=(), microphone=()"
 </IfModule>
+
+<FilesMatch "\.(htaccess|htpasswd|env|git|gitignore|json|lock|md|ini|log|sh|bak|yml)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
