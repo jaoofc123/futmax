@@ -17,18 +17,8 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
     {
-    nome: "Confiança Vs Bahia (04/06)",
-    inicio: "2025-06-04T19:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-    ]
-  },
-  {
-    nome: "Botafogo Vs Ceará Sc (04/06)",
-    inicio: "2025-06-04T20:00:00-03:00",
+    nome: "Jogos em Breve",
+    inicio: "2025-06-02T19:00:00-03:00",
     opcoes: [
       { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
       { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
