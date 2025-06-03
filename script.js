@@ -16,26 +16,6 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-  {
-    nome: "Em Breve (03/06)",
-    inicio: "2025-06-03T21:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-    ]
-  },
-  {
-    nome: "Em Breve (03/06)",
-    inicio: "2025-06-03T21:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-      { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-    ]
-  },
     {
     nome: "Confiança Vs Bahia (04/06)",
     inicio: "2025-06-04T19:00:00-03:00",
@@ -62,7 +42,9 @@ const jogos = [
     opcoes: [
       { nome: "UFC 1", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
       { nome: "UFC 2", url: "https://nossoplayeronlinehd.com/tv/ufcfightpass" },
-      { nome: "Globo Sp", url: "https://embedflix.top/tv/globo-sp" }
+      { nome: "Globo Sp", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "SBT", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
+      { nome: "Record Tv", url: "https://nossoplayeronlinehd.lat/tv/record" }
     ]
   }
 ];
