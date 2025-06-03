@@ -1,15 +1,15 @@
 const LOGINS = [
   { username: "admjao", password: "SlAxMjMhMTIz" },
-  { username: "nome0", password: "ZXVtdWRvMTIz" }, 
-  { username: "nome1", password: "ZXVtdWRvMTIz" },
-  { username: "nome2", password: "ZXVtdWRvMTIz" },
-  { username: "nome3", password: "ZXVtdWRvMTIz" },         
-  { username: "nome4", password: "ZXVtdWRvMTIz" },        
-  { username: "nome5", password: "ZXVtdWRvMTIz" },    
-  { username: "nome6", password: "ZXVtdWRvMTIz" },    
-  { username: "nome7", password: "ZXVtdWRvMTIz" },    
-  { username: "nome8", password: "ZXVtdWRvMTIz" },
-  { username: "nome9", password: "ZXVtdWRvMTIz" }
+  { username: "samuca", password: "c2FtdWVsMjAxMQ==" }, //assinou 00.00 acaba 00.00
+  { username: "nome1", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
+  { username: "nome2", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
+  { username: "nome3", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
+  { username: "nome4", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
+  { username: "nome5", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
+  { username: "nome6", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
+  { username: "nome7", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
+  { username: "nome8", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
+  { username: "nome9", password: "ZXVtdWRvMTIz" }  //assinou 00.00 acaba 00.00
 ];
 
 const SESSION_KEY = "xfut_session";
