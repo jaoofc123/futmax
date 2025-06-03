@@ -8,9 +8,9 @@
 </head>
 <body>
   <div id="login-container" class="center-box">
-    <div id="user-notification" class="user-notification">
-      <span>Temos uma programação imperdível! Jogos da Seleção Brasileira Feminina e Masculina, finais de campeonatos nacionais e internacionais, além das partidas decisivas da Copa do Brasil, Libertadores e muito mais!</span>
-      <button class="close-notification" onclick="closeNotification()">×</button>
+    <div class="user-notification">
+      Temos uma programação imperdível! Jogos da Seleção Brasileira Feminina e Masculina, finais de campeonatos nacionais e internacionais, além das partidas decisivas da Copa do Brasil.
+      <button class="close-notification" onclick="this.parentElement.style.display='none';">×</button>
     </div>
     <div id="login-notice" class="login-notice">
       Assista aos jogos mais importantes, como a final da Champions, por apenas <b>R$5,90/mês!</b> Futebol pra você e pra todo mundo!
@@ -18,6 +18,7 @@
     <h2>Login Xfut</h2>
     <input type="text" id="username" placeholder="Usuário" autocomplete="username">
     <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
+    <input type="text" id="nome" placeholder="Seu nome" autocomplete="name">
     <button onclick="login()">Entrar</button>
     <p id="login-msg" class="error"></p>
   </div>
@@ -48,11 +49,12 @@
     ou pelo Instagram <a href="https://instagram.com/avante.palmeirasx" target="_blank">@avante.palmeirasx</a>.
     Todos os direitos reservados © Xfut 2025.
   </footer>
-<div id="user-notification" style="display:none;">
-  <div class="notification-content">
-    <span id="notification-message"></span>
-    <button id="close-notification" onclick="closeNotification()">X</button>
+  <!-- Apenas UM bloco central de notificação personalizada -->
+  <div id="user-notification" style="display:none;">
+    <div class="notification-content">
+      <span id="notification-message"></span>
+      <button id="close-notification" onclick="closeNotification()">X</button>
+    </div>
   </div>
-</div>
 </body>
 </html>
