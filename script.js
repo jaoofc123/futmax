@@ -16,35 +16,24 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-    {
-    nome: "Chapecoense Vs Amazonas (02/06)",
-    inicio: "2025-06-02T19:00:00-03:00",
+  {
+    nome: "Em Breve (03/06)",
+    inicio: "2025-06-03T21:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/espn" },
-      { nome: "Opção 2", url: "https://nossoplayeronlinehd.net/extra/eventos2" },
-      { nome: "Opção 3", url: "https://embedcanaistv.com/espn/" },
-      { nome: "Opção 4", url: "https://reidoscanais.cc/embed/?id=espn" }
+      { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
     ]
   },
   {
-    nome: "Brasil(F) Vs Japão(F) (02/06)",
-    inicio: "2025-06-02T20:00:00-03:00",
+    nome: "Em Breve (03/06)",
+    inicio: "2025-06-03T21:00:00-03:00",
     opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
-      { nome: "Opção 2", url: "https://embedcanaistv.com/sportv/" },
-      { nome: "Opção 3", url: "https://daddylive.dad/futemax/stream-88.php" },
-      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br1.php" },
-      { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=sportv" }
-    ]
-  },
-  {
-    nome: "Paysandu Vs Criciúma (02/06)",
-    inicio: "2025-06-02T21:00:00-03:00",
-    opcoes: [
-      { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/extra/eventos3" },
-      { nome: "Opção 2", url: "https://sportzonline.si/channels/bra/br3.php" },
-      { nome: "Opção 3", url: "https://nossoplayeronlinehd.net/extra/eventos3" },
-      { nome: "Opção 4", url: "https://sportzonline.si/channels/bra/br3.php" }
+      { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
+      { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
     ]
   },
     {
