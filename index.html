@@ -2,65 +2,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>xfut - Jogos</title>
+  <title>xfut - Login</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .lateral-msg {
-      position: fixed;
-      top: 60px;
-      right: 16px;
-      max-width: 340px;
-      z-index: 2000;
-      background: #29292b;
-      color: #ffd700;
-      padding: 14px 12px;
-      border-radius: 10px;
-      font-size: 1.03em;
-      box-shadow: 0 2px 10px #0004;
-      border: 1.5px solid #ffd70044;
-      text-align: left;
-    }
-    @media (max-width: 900px) {
-      .lateral-msg {
-        position: static;
-        margin: 18px auto 0 auto;
-        display: block;
-      }
-    }
-  </style>
 </head>
 <body>
-  <!-- Conteúdo principal da página de jogos -->
+  <!-- Mensagem obrigatória (sempre fixa e visível) -->
+  <div class="user-notification">
+    Assista aos jogos mais importantes, como a final da Champions, por apenas R$5,90/mês! Futebol pra você e pra todo mundo!
+  </div>
+  
+  <!-- Mensagem removível -->
+  <div class="user-notification" id="removable-msg">
+    Temos uma programação imperdível! Jogos da Seleção Brasileira Feminina e Masculina, finais de campeonatos nacionais e internacionais, além das partidas decisivas da Copa do Brasil.
+    <button class="close-notification" onclick="document.getElementById('removable-msg').style.display='none'">×</button>
+  </div>
+
   <div class="center-box">
-    <h2>xfut - Jogos Disponíveis</h2>
-    <!-- Lista de jogos aqui -->
-    <div class="game-block">
-      <h3>Final da Champions League</h3>
-      <div class="opcoes">
-        <a class="opcao-link" href="#">Streaming 1</a>
-        <a class="opcao-link" href="#">Streaming 2</a>
-      </div>
-    </div>
-    <!-- Outros jogos ... -->
+    <h2>xfut</h2>
+    <form>
+      <input type="text" placeholder="Usuário" required><br>
+      <input type="password" placeholder="Senha" required><br>
+      <button type="submit">Entrar</button>
+    </form>
   </div>
-
-  <!-- Mensagem lateral direita -->
-  <div class="lateral-msg">
-    Ao clicar na opção de streaming (1) ou (2), você será direcionado para o jogo.<br>
-    Porém, tudo o que abrir ao clicar na aba do jogo deve ser fechado, pois são apenas propagandas.
-  </div>
-
-  <script>
-    // Fechar propagandas ao abrir abas - exemplo de controle, personalize conforme seu fluxo
-    document.querySelectorAll('.opcao-link').forEach(el => {
-      el.addEventListener('click', function(e) {
-        // Adapte este controle ao seu sistema real
-        setTimeout(() => {
-          // Aqui você pode colocar lógica para fechar popups ou alertar o usuário
-          alert('Feche todas as abas/janelas extras, pois são propagandas!');
-        }, 3500);
-      });
-    });
-  </script>
 </body>
 </html>
