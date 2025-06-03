@@ -1,15 +1,15 @@
 const LOGINS = [
-  { username: "admjao", password: "SlAxMjMhMTIz" },
-  { username: "nome0", password: "ZXVtdWRvMTIz" }, 
-  { username: "nome1", password: "ZXVtdWRvMTIz" },
-  { username: "nome2", password: "ZXVtdWRvMTIz" },
-  { username: "nome3", password: "ZXVtdWRvMTIz" },         
-  { username: "nome4", password: "ZXVtdWRvMTIz" },        
-  { username: "nome5", password: "ZXVtdWRvMTIz" },    
-  { username: "nome6", password: "ZXVtdWRvMTIz" },    
-  { username: "nome7", password: "ZXVtdWRvMTIz" },    
-  { username: "nome8", password: "ZXVtdWRvMTIz" },
-  { username: "nome9", password: "ZXVtdWRvMTIz" }
+  { username: "admjao", password: "SlAxMjMhMTIz", nome: "João" },
+  { username: "nome0", password: "ZXVtdWRvMTIz", nome: "Nome0" },
+  { username: "nome1", password: "ZXVtdWRvMTIz", nome: "Nome1" },
+  { username: "nome2", password: "ZXVtdWRvMTIz", nome: "Nome2" },
+  { username: "nome3", password: "ZXVtdWRvMTIz", nome: "Nome3" },         
+  { username: "nome4", password: "ZXVtdWRvMTIz", nome: "Nome4" },       
+  { username: "nome5", password: "ZXVtdWRvMTIz", nome: "Nome5" },   
+  { username: "nome6", password: "ZXVtdWRvMTIz", nome: "Nome6" },  
+  { username: "nome7", password: "ZXVtdWRvMTIz", nome: "Nome7" },
+  { username: "nome8", password: "ZXVtdWRvMTIz", nome: "Nome8" },
+  { username: "nome9", password: "ZXVtdWRvMTIz", nome: "Nome9" }
 ];
 
 const SESSION_KEY = "xfut_session";
@@ -52,7 +52,29 @@ function formatTime(ms) {
 function login() {
   const u = document.getElementById("username").value;
   const p = document.getElementById("password").value;
-  const nome = document.getElementById("nome").value;
+  const msg = document.getElementById("login-msg");
+  if (localStorage.getItem(SESSION_KEY) === "active") {
+    msg.innerText = "Já existe um login ativo neste navegador!";
+    return;
+  }
+  let encodedPass = "";
+  try {
+    encodedPass = btoa(p);
+  } catch (e) {
+    msg.innerText = "Senha contém caracteres inválidos!";
+    return;
+  }
+  const userObj = LOGINS.find(login => login.username === u && login.password === encodedPass);
+  if (userObj) {
+    const nome = userObj.nome;
+    localStorage.setItem(SESSION_KEY, "active");
+    showMain();
+    msg.innerText = "";
+    showWelcomeNotification(nome);
+  } else {
+    msg.innerText = "Usuário ou senha inválidos!";
+  }
+}
   const msg = document.getElementById("login-msg");
   if (localStorage.getItem(SESSION_KEY) === "active") {
     msg.innerText = "Já existe um login ativo neste navegador!";
