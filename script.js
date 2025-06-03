@@ -75,28 +75,7 @@ function login() {
     msg.innerText = "Usuário ou senha inválidos!";
   }
 }
-  const msg = document.getElementById("login-msg");
-  if (localStorage.getItem(SESSION_KEY) === "active") {
-    msg.innerText = "Já existe um login ativo neste navegador!";
-    return;
-  }
-  let encodedPass = "";
-  try {
-    encodedPass = btoa(p);
-  } catch (e) {
-    msg.innerText = "Senha contém caracteres inválidos!";
-    return;
-  }
-  const isValid = LOGINS.some(login => login.username === u && login.password === encodedPass);
-  if (isValid) {
-    localStorage.setItem(SESSION_KEY, "active");
-    showMain();
-    msg.innerText = "";
-    showWelcomeNotification(nome); // Chama mensagem personalizada!
-  } else {
-    msg.innerText = "Usuário ou senha inválidos!";
-  }
-}
+
 
 function logout() {
   localStorage.removeItem(SESSION_KEY);
