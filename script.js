@@ -231,4 +231,22 @@ function showMain() {
   setupRodapeScroll();
 }
 
-// -----------------------------------------------------
+// --- Notificação personalizada de boas-vindas ---
+function showWelcomeNotification(nome) {
+  const notif = document.getElementById("user-notification");
+  const msg = document.getElementById("notification-message");
+  msg.innerHTML = `Oiiiii, <b>${nome}</b>! Bom jogo pra você — que seu time brilhe em campo e saia com a vitória!`;
+  notif.style.display = "flex";
+  document.body.classList.add("blur");
+  notif._timeout = setTimeout(closeNotification, 10000);
+  document.onkeydown = function(e) {
+    if (e.key === "Escape") closeNotification();
+  }
+}
+function closeNotification() {
+  const notif = document.getElementById("user-notification");
+  notif.style.display = "none";
+  document.body.classList.remove("blur");
+  clearTimeout(notif._timeout);
+  document.onkeydown = null;
+}
