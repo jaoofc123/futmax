@@ -52,6 +52,7 @@ function formatTime(ms) {
 function login() {
   const u = document.getElementById("username").value;
   const p = document.getElementById("password").value;
+  const nome = document.getElementById("nome").value;
   const msg = document.getElementById("login-msg");
   if (localStorage.getItem(SESSION_KEY) === "active") {
     msg.innerText = "Já existe um login ativo neste navegador!";
@@ -69,6 +70,7 @@ function login() {
     localStorage.setItem(SESSION_KEY, "active");
     showMain();
     msg.innerText = "";
+    showWelcomeNotification(nome); // Chama mensagem personalizada!
   } else {
     msg.innerText = "Usuário ou senha inválidos!";
   }
@@ -148,11 +150,11 @@ function iniciarContagemJogo(jogo, idx) {
       }
     } else if (diff > -TEMPO_JOGO_MS) {
       const tempoRestante = TEMPO_JOGO_MS + diff;
-    if (tempoRestante > 0) {
-      statusArea.innerHTML = `<span class="status ao-vivo-agora">🟢 AO VIVO AGORA</span>`;
-    } else {
-      statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
-}
+      if (tempoRestante > 0) {
+        statusArea.innerHTML = `<span class="status ao-vivo-agora">🟢 AO VIVO AGORA</span>`;
+      } else {
+        statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
+      }
     } else {
       statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
     }
@@ -179,11 +181,6 @@ window.onload = function() {
 window.addEventListener("beforeunload", () => {
   localStorage.removeItem(SESSION_KEY);
 });
-
-function closeNotification() {
-  const notif = document.getElementById("user-notification");
-  if (notif) notif.style.display = "none";
-}
 
 function handleSearch() {
   const searchTerm = document.getElementById('search-input').value;
@@ -231,7 +228,7 @@ function showMain() {
   setupRodapeScroll();
 }
 
-// --- Notificação personalizada de boas-vindas ---
+// --- Notificação personalizada de boas-vindas (central, bloqueia o resto) ---
 function showWelcomeNotification(nome) {
   const notif = document.getElementById("user-notification");
   const msg = document.getElementById("notification-message");
