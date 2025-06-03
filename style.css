@@ -3,7 +3,7 @@ body {
   background: linear-gradient(120deg, #191919 0%, #292929 100%);
   color: #f5f5f5;
   margin: 0;
-  padding: 0 0 100px 0; /* já reserva espaço pro rodapé */
+  padding: 0 0 100px 0;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -136,28 +136,7 @@ h2 {
   font-size: 1.01em;
 }
 
-/* Notificação de login */
-.login-notice {
-  background: linear-gradient(90deg, #ffd700 60%, #fffde4 100%);
-  color: #1b1b1b;
-  padding: 18px 14px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  font-size: 1.08em;
-  font-weight: bold;
-  box-shadow: 0 2px 14px #0002;
-  text-align: center;
-  animation: fadein 1s;
-  border: 1.5px solid #ffd70088;
-}
-
-/* Animação */
-@keyframes fadein {
-  from { opacity: 0; transform: translateY(-20px);}
-  to   { opacity: 1; transform: translateY(0);}
-}
-
-/* Notificação ao usuário */
+/* Notificação informativa fixa (login/topo) */
 .user-notification {
   background: #29292b;
   color: #ffd700;
@@ -172,7 +151,6 @@ h2 {
   animation: fadein 0.7s;
   border: 1.5px solid #ffd70044;
 }
-
 .close-notification {
   position: absolute;
   right: 12px;
@@ -189,164 +167,7 @@ h2 {
   color: #e74c3c;
 }
 
-/* Status */
-.status-area {
-  margin-bottom: 12px;
-  font-size: 1.08em;
-  font-weight: bold;
-}
-.status.countdown {
-  color: #ffd700;
-}
-.status.ao-vivo-agora {
-  color: #181818;
-  background: #ffd700;
-  padding: 3px 12px;
-  border-radius: 7px;
-  font-weight: 600;
-}
-.status.ao-vivo-instant {
-  color: #232323;
-  background: #fffde4;
-  padding: 3px 10px;
-  border-radius: 7px;
-  border: 1px solid #ffd700;
-}
-.status.encerrado {
-  color: #e74c3c;
-}
-.timer {
-  margin-left: 8px;
-  font-family: monospace;
-  font-size: 1.03em;
-}
-
-/* Notificação fixa */
-.notificacao-jogo {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #292929;
-  color: #fff;
-  padding: 16px 24px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  z-index: 9999;
-  max-width: 320px;
-  font-size: 1em;
-}
-
-/* ===== Rodapé Moderno ===== */
-.rodape-moderno {
-  width: 100vw;
-  background: linear-gradient(90deg, #191919 0%, #383838 100%);
-  color: #ffd700;
-  text-align: center;
-  padding: 22px 10px;
-  font-size: 1.13rem;
-  box-shadow: 0 -4px 24px rgba(24, 24, 24, 0.18);
-  letter-spacing: 0.7px;
-  border-top: 3px solid #ffd700;
-  /* Corrigido: agora o rodapé não é fixo por padrão */
-  position: static;
-  left: unset;
-  bottom: unset;
-  z-index: unset;
-  font-family: inherit;
-  transition: background 0.4s, color 0.4s;
-  text-shadow: 0 1px 8px #111, 0 0 2px #ffd70044;
-}
-
-/* NOVA CLASSE para rodapé fixo (login) */
-.rodape-fixa {
-  position: fixed !important;
-  left: 0;
-  bottom: 0;
-  z-index: 1000;
-  width: 100vw;
-}
-
-.rodape-moderno a {
-  color: #fff;
-  background: linear-gradient(90deg,#ffd700 40%,#bfa230 100%);
-  padding: 3px 7px;
-  margin: 0 2px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 1px 3px #0002;
-  transition: background 0.2s, color 0.2s;
-}
-
-.rodape-moderno a:hover {
-  color: #191919;
-  background: linear-gradient(90deg,#fffde4 60%,#ffd700 100%);
-  text-shadow: none;
-}
-
-/* ===== Responsividade ===== */
-@media (max-width: 600px) {
-  .center-box {
-    padding: 18px 2vw;
-    max-width: 99vw;
-    margin: 16px auto 80px auto;
-    font-size: 1em;
-  }
-  .game-block {
-    padding: 10px 4px;
-    font-size: 0.98em;
-  }
-  .login-notice, .user-notification {
-    padding: 11px 4px;
-    font-size: 0.97em;
-  }
-  .rodape-moderno {
-    font-size: 0.98rem;
-    padding: 12px 3px;
-  }
-  .notificacao-jogo {
-    top: auto;
-    bottom: 90px;
-    right: 5vw;
-    left: 5vw;
-    max-width: 90vw;
-    font-size: 0.98em;
-    padding: 10px;
-  }
-  input[type="text"], input[type="password"] {
-    width: 98%;
-    font-size: 1em;
-  }
-  button, .opcao-link, #search-btn {
-    font-size: 0.98em;
-    padding: 10px 12px;
-  }
-  .search-area {
-    flex-direction: column;
-    gap: 6px;
-  }
-}
-
-/* Telas MUITO grandes (TV, etc) */
-@media (min-width: 1200px) {
-  .center-box {
-    max-width: 600px;
-    font-size: 1.3em;
-    padding: 64px 48px;
-  }
-  .game-block {
-    font-size: 1.15em;
-    padding: 32px;
-  }
-  .rodape-moderno {
-    font-size: 1.3rem;
-  }
-  .notificacao-jogo {
-    font-size: 1.18em;
-    padding: 18px 32px;
-  }
-}
-
+/* Notificação personalizada central (boas-vindas) */
 #user-notification {
   position: fixed;
   z-index: 9999;
@@ -380,3 +201,30 @@ h2 {
 body.blur {
   overflow: hidden;
 }
+
+/* Animação fadein */
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-20px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+/* Rodapé moderno e responsividade - mantenha o que já usa */
+.rodape-moderno {
+  width: 100vw;
+  background: linear-gradient(90deg, #191919 0%, #383838 100%);
+  color: #ffd700;
+  text-align: center;
+  padding: 22px 10px;
+  font-size: 1.13rem;
+  box-shadow: 0 -4px 24px rgba(24, 24, 24, 0.18);
+  letter-spacing: 0.7px;
+  border-top: 3px solid #ffd700;
+  position: static;
+  left: unset;
+  bottom: unset;
+  z-index: unset;
+  font-family: inherit;
+  transition: background 0.4s, color 0.4s;
+  text-shadow: 0 1px 8px #111, 0 0 2px #ffd70044;
+}
+/* ...E continue com seu CSS atual para responsividade etc */
