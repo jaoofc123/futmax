@@ -1,6 +1,6 @@
 const LOGINS = [
   { username: "admjao", password: "SlAxMjMhMTIz" },
-  { username: "samuca", password: "c2FtdWVsMjAxMQ==" }, //assinou 00.00 acaba 00.00
+  { username: "nome0", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
   { username: "nome1", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
   { username: "nome2", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
   { username: "nome3", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
