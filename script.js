@@ -1,8 +1,8 @@
 const LOGINS = [
   { username: "admjao", password: "SlAxMjMhMTIz" },
-  { username: "nome0", password: "ZXVtdWRvMTIz" }, 
-  { username: "nome1", password: "ZXVtdWRvMTIz" },
-  { username: "nome2", password: "ZXVtdWRvMTIz" },
+  { username: "pedroh", password: "cGVkcm9oMDUuMDY=" }, 
+  { username: "lucca", password: "bHVjY2FtMDUuMDY=" },
+  { username: "jose", password: "am9zZTA1LjA2" },
   { username: "nome3", password: "ZXVtdWRvMTIz" },         
   { username: "nome4", password: "ZXVtdWRvMTIz" },        
   { username: "nome5", password: "ZXVtdWRvMTIz" },    
