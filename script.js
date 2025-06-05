@@ -214,8 +214,7 @@ const jogos = [
     nome: "Canais Fixos",
     inicio: null,
     opcoes: [
-      { nome: "UFC 1", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
-      { nome: "UFC 2", url: "https://nossoplayeronlinehd.com/tv/ufcfightpass" },
+      { nome: "UFC 1", url: "https://nossoplayeronlinehd.com/tv/ufcfightpass" },
       { nome: "Globo Sp", url: "https://embedflix.top/tv/globo-sp" },
       { nome: "SBT", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
       { nome: "Record Tv", url: "https://nossoplayeronlinehd.lat/tv/record" }
