@@ -1,8 +1,8 @@
 const LOGINS = [
   { username: "admjao", password: "SlAxMjMhMTIz" },
-  { username: "pedroh", password: "cGVkcm9oMDUuMDY=" }, 
-  { username: "lucca", password: "bHVjY2FtMDUuMDY=" },
-  { username: "jose", password: "am9zZTA1LjA2" },
+  { username: "pedro01", password: "cGVkcm9oZW5yaXF1ZTIwMTE=" }, //pedrohenrique2011
+  { username: "lucca02", password: "bHVjY2FtZWxvMDAwMQ==" }, //luccamelo0001
+  { username: "jose03", password: "am9zZXVmYzAw" }, //joseufc00
   { username: "nome3", password: "ZXVtdWRvMTIz" },         
   { username: "nome4", password: "ZXVtdWRvMTIz" },        
   { username: "nome5", password: "ZXVtdWRvMTIz" },    
