@@ -1,3 +1,21 @@
+let adInteracted = false;
+
+// Função chamada ao clicar em um anúncio
+function adClicked(n) {
+  adInteracted = true;
+  document.getElementById("login-btn").disabled = false;
+  document.querySelector('.login-msg').innerText = "Agora clique em Login para assistir os jogos grátis!";
+}
+
+// Sobrescreva a função showAd para NÃO abrir janela, só liberar acesso
+function showAd() {
+  if (adInteracted) {
+    liberarAcesso();
+  } else {
+    document.getElementById("login-msg").innerText = "Você precisa clicar em um anúncio antes!";
+  }
+}
+
 const SESSION_KEY = "xfut_session";
 
 // --- NOVO LOGIN: SÓ BOTÃO E PROPAGANDA ---
