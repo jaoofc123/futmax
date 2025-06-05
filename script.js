@@ -31,11 +31,10 @@ const jogos = [
   nome: "Botafogo SP x Coritiba (05.06)",
   inicio: "2025-06-05T18:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/espn" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos3" },
-    { nome: "Opção 3", url: "https://daddylive.mp/futemax/stream-81.php" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/espn/" },
-    { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=espn" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/extra/eventos3" },
+    { nome: "Opção 2", url: "https://daddylive.mp/futemax/stream-81.php" },
+    { nome: "Opção 3", url: "https://embedcanaistv.com/espn/" },
+    { nome: "Opção 4", url: "https://reidoscanais.cc/embed/?id=espn" }
   ]
 },
   { 
