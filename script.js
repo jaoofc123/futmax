@@ -3,7 +3,7 @@ const LOGINS = [
   { username: "pedro", password: "cGVkcm9oZW5yaXF1ZTIwMTI=" }, //pedrohenrique2012
   { username: "lucca", password: "bHVjY2FtZWxvMDAwMQ==" }, //luccamelo0001
   { username: "jose", password: "am9zZXVmYw==" }, //joseufc
-  { username: "nome3", password: "ZXVtdWRvMTIz" }, //
+  { username: "jacintopinto", password: "bHVpenNhbmp1bGlhbm8xMg==" }, //luizsanjuliano12
   { username: "nome4", password: "ZXVtdWRvMTIz" },        
   { username: "nome5", password: "ZXVtdWRvMTIz" },    
   { username: "nome6", password: "ZXVtdWRvMTIz" },    
