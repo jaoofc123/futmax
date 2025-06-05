@@ -1,181 +1,90 @@
-const LOGINS = [
-  { username: "admjao", password: "SlAxMjMhMTIz" },
-  { username: "nome0", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome1", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome2", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome3", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome4", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome5", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome6", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome7", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome8", password: "ZXVtdWRvMTIz" }, //assinou 00.00 acaba 00.00
-  { username: "nome9", password: "ZXVtdWRvMTIz" }  //assinou 00.00 acaba 00.00
-];
-
 const SESSION_KEY = "xfut_session";
 
-// Lista de jogos e opções (agora com data e hora exata de início)
+// --- NOVO LOGIN: SÓ BOTÃO E PROPAGANDA ---
+function showAd() {
+  // Substitua o link abaixo pelo link do seu anúncio!
+  const adWindow = window.open('https://www.google.com', '_blank');
+  // Aguarda a janela fechar
+  let checkInterval = setInterval(() => {
+    if (adWindow.closed) {
+      clearInterval(checkInterval);
+      liberarAcesso();
+    }
+  }, 800);
+}
+
+function liberarAcesso() {
+  localStorage.setItem(SESSION_KEY, "active");
+  showMain();
+  document.getElementById("login-msg").innerText = "";
+}
+
+function logout() {
+  localStorage.removeItem(SESSION_KEY);
+  showLogin();
+}
+
+window.onload = function() {
+  if (localStorage.getItem(SESSION_KEY) === "active") {
+    showMain();
+  } else {
+    showLogin();
+  }
+  window.addEventListener("storage", function(e) {
+    if (e.key === SESSION_KEY && e.newValue !== "active") {
+      showLogin();
+    }
+  });
+};
+
+window.addEventListener("beforeunload", () => {
+  localStorage.removeItem(SESSION_KEY);
+});
+
+// Mostra só o login (sem rodapé, sem notificações)
+function showLogin() {
+  document.getElementById("main-container").style.display = "none";
+  document.getElementById("login-container").style.display = "block";
+  localStorage.removeItem(SESSION_KEY);
+  // Esconde rodapé
+  let rodape = document.querySelector('.rodape-moderno');
+  if (rodape) rodape.style.display = "none";
+  // Esconde notificações
+  let notif = document.getElementById("user-notification");
+  if (notif) notif.style.display = "none";
+  let aviso = document.getElementById("notificacao-jogo");
+  if (aviso) aviso.style.display = "none";
+}
+
+// Mostra a área principal (com rodapé e notificações)
+function showMain() {
+  document.getElementById("login-container").style.display = "none";
+  document.getElementById("main-container").style.display = "block";
+  let notifJogo = document.getElementById("notificacao-jogo");
+  if (notifJogo) notifJogo.style.display = "block";
+  renderJogos();
+  let rodape = document.querySelector('.rodape-moderno');
+  if (rodape) {
+    rodape.classList.remove('rodape-fixa');
+    rodape.style.display = "block";
+    setupRodapeScroll();
+  }
+}
+
+// O RESTANTE DO SCRIPT SEGUE COMO ANTES (lista de jogos, renderização, busca)
+
 const jogos = [
-{
-  nome: "Al Ahly x Inter Miami",
-  inicio: "2025-06-14T21:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Bayern x Auckland City",
-  inicio: "2025-06-15T13:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "PSG x Atlético Madrid",
-  inicio: "2025-06-15T16:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Palmeiras x Porto",
-  inicio: "2025-06-15T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Botafogo x Seattle Sounders",
-  inicio: "2025-06-15T23:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Chelsea x León",
-  inicio: "2025-06-16T16:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Boca Juniors x Benfica",
-  inicio: "2025-06-16T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Flamengo x Espérance",
-  inicio: "2025-06-16T22:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Fluminense x Borussia",
-  inicio: "2025-06-17T13:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "River Plate x Urawa Reds",
-  inicio: "2025-06-17T16:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Ulsan Hyundai x Sundowns",
-  inicio: "2025-06-17T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Monterrey x Inter",
-  inicio: "2025-06-17T22:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "City x Wydad AC",
-  inicio: "2025-06-18T13:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Real Madrid x Al-Hilal",
-  inicio: "2025-06-18T16:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Pachuca x RB Salzburg",
-  inicio: "2025-06-18T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-{
-  nome: "Al Ain x Juventus",
-  inicio: "2025-06-18T22:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
+    {
+    nome: "nome1 VS nome2 (00.00)",
+    inicio: null,
+    opcoes: [
+      { nome: "Opção 1", url: "https://embedflix.top/tv/ufc-fight-pass-hd" },
+      { nome: "Opção 2", url: "https://nossoplayeronlinehd.com/tv/ufcfightpass" },
+      { nome: "Opção 3", url: "https://embedflix.top/tv/globo-sp" },
+      { nome: "Opção 4", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
+      { nome: "Opção 5", url: "https://nossoplayeronlinehd.lat/tv/record" }
+    ]
+  },
   {
     nome: "Canais Fixos",
     inicio: null,
@@ -189,6 +98,8 @@ const jogos = [
   }
 ];
 
+// Funções auxiliares e renderização dos jogos (mantenha igual ao original):
+
 const intervalosJogos = {};
 
 function formatTime(ms) {
@@ -199,37 +110,6 @@ function formatTime(ms) {
   return [hours, minutes, seconds].map(n => String(n).padStart(2, '0')).join(':');
 }
 
-function login() {
-  const u = document.getElementById("username").value;
-  const p = document.getElementById("password").value;
-  const msg = document.getElementById("login-msg");
-  if (localStorage.getItem(SESSION_KEY) === "active") {
-    msg.innerText = "Já existe um login ativo neste navegador!";
-    return;
-  }
-  let encodedPass = "";
-  try {
-    encodedPass = btoa(p);
-  } catch (e) {
-    msg.innerText = "Senha contém caracteres inválidos!";
-    return;
-  }
-  const isValid = LOGINS.some(login => login.username === u && login.password === encodedPass);
-  if (isValid) {
-    localStorage.setItem(SESSION_KEY, "active");
-    showMain();
-    msg.innerText = "";
-  } else {
-    msg.innerText = "Usuário ou senha inválidos!";
-  }
-}
-
-function logout() {
-  localStorage.removeItem(SESSION_KEY);
-  showLogin();
-}
-
-// Função para normalizar string (remover acentos)
 function normalizar(str) {
   return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 }
@@ -237,7 +117,6 @@ function normalizar(str) {
 function renderJogos(filter = "") {
   const list = document.getElementById("games-list");
   list.innerHTML = "";
-  // Limpa todos intervalos antigos
   for (const idx in intervalosJogos) {
     clearInterval(intervalosJogos[idx]);
     delete intervalosJogos[idx];
@@ -298,37 +177,19 @@ function iniciarContagemJogo(jogo, idx) {
       }
     } else if (diff > -TEMPO_JOGO_MS) {
       const tempoRestante = TEMPO_JOGO_MS + diff;
-    if (tempoRestante > 0) {
-      statusArea.innerHTML = `<span class="status ao-vivo-agora">🟢 AO VIVO AGORA</span>`;
-    } else {
-      statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
-}
+      if (tempoRestante > 0) {
+        statusArea.innerHTML = `<span class="status ao-vivo-agora">🟢 AO VIVO AGORA</span>`;
+      } else {
+        statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
+      }
     } else {
       statusArea.innerHTML = `<span class="status encerrado">Jogo encerrado</span>`;
     }
   }
   updateStatus();
-  // Limpa intervalo antigo se houver
   if (intervalosJogos[idx]) clearInterval(intervalosJogos[idx]);
   intervalosJogos[idx] = setInterval(updateStatus, 1000);
 }
-
-window.onload = function() {
-  if (localStorage.getItem(SESSION_KEY) === "active") {
-    showMain();
-  } else {
-    showLogin();
-  }
-  window.addEventListener("storage", function(e) {
-    if (e.key === SESSION_KEY && e.newValue !== "active") {
-      showLogin();
-    }
-  });
-};
-
-window.addEventListener("beforeunload", () => {
-  localStorage.removeItem(SESSION_KEY);
-});
 
 function closeNotification() {
   const notif = document.getElementById("user-notification");
@@ -345,9 +206,7 @@ function handleSearch() {
 function setupRodapeScroll() {
   const rodape = document.querySelector('.rodape-moderno');
   function verificarRodape() {
-    // Só ativa se a tela da lista de jogos estiver visível
     if (document.getElementById("main-container").style.display === "block") {
-      // Chegou no fim da página? (com margem de 2px para tolerância)
       if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) {
         rodape.style.display = "block";
       } else {
@@ -359,26 +218,7 @@ function setupRodapeScroll() {
   }
   window.addEventListener('scroll', verificarRodape);
   window.addEventListener('resize', verificarRodape);
-  verificarRodape(); // Checa inicialmente
-}
-
-function showLogin() {
-  document.getElementById("main-container").style.display = "none";
-  document.getElementById("login-container").style.display = "block";
-  localStorage.removeItem(SESSION_KEY);
-  const rodape = document.querySelector('.rodape-moderno');
-  rodape.classList.add('rodape-fixa');
-  rodape.style.display = "block";
-}
-
-function showMain() {
-  document.getElementById("login-container").style.display = "none";
-  document.getElementById("main-container").style.display = "block";
-  document.getElementById("notificacao-jogo").style.display = "block";
-  renderJogos();
-  const rodape = document.querySelector('.rodape-moderno');
-  rodape.classList.remove('rodape-fixa');
-  setupRodapeScroll();
+  verificarRodape();
 }
 
 // -----------------------------------------------------
