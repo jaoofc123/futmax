@@ -16,7 +16,17 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-{
+  { 
+  nome: "Equador x Brasileira(M) (05.06)",
+  inicio: "2025-06-14T21:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
+    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
+    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
+    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+  ]
+},
+{ 
   nome: "Al Ahly x Inter Miami",
   inicio: "2025-06-14T21:00:00-03:00",
   opcoes: [
