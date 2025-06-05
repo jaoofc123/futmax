@@ -7,11 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="login-container" class="center-box">
-    <p class="login-msg">Clique em um anúncio para assistir jogos grátis</p>
-    <button id="login-btn" onclick="showAd()">Login</button>
-    <p id="login-msg" class="error"></p>
+<div id="login-container" class="center-box">
+  <div class="ads-area">
+    <!-- Exemplo de anúncio do Google (substitua pelo seu código AdSense real) -->
+    <div class="ad-slot">
+      <!-- Google AdSense Example (substitua pelo seu script real do AdSense) -->
+      <iframe src="https://google.com" title="Anúncio 1" class="fake-ad" onclick="adClicked(1)"></iframe>
+    </div>
+    <div class="ad-slot">
+      <iframe src="https://google.com" title="Anúncio 2" class="fake-ad" onclick="adClicked(2)"></iframe>
+    </div>
+    <div class="ad-slot">
+      <iframe src="https://google.com" title="Anúncio 3" class="fake-ad" onclick="adClicked(3)"></iframe>
+    </div>
   </div>
+  <p class="login-msg">Clique em um anúncio para assistir jogos grátis</p>
+  <button id="login-btn" onclick="showAd()" disabled>Login</button>
+  <p id="login-msg" class="error"></p>
+</div>
   <div id="main-container" class="center-box" style="display: none;">
     <h2>Lista de Jogos do Xfut</h2>
     <div class="search-area">
