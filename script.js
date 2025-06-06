@@ -29,6 +29,50 @@ const jogos = [
   ]
 },
 { 
+  nome: "Noruega x Italia (06.06)",
+  inicio: "2025-06-06T15:45:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" },
+    { nome: "Opção 5", url: "" }
+	 ]
+},
+{ 
+  nome: "Colômbia x Peru (06.06)",
+  inicio: "2025-06-06T17:30:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" },
+    { nome: "Opção 5", url: "" }
+	 ]
+},
+{ 
+  nome: "Novorizontino x Chapecoense (06.06)",
+  inicio: "2025-06-06T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" },
+    { nome: "Opção 5", url: "" }
+	 ]
+},
+{ 
+  nome: "Venezuela x Bolivia (06.06)",
+  inicio: "2025-06-06T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" },
+    { nome: "Opção 5", url: "" }
+	 ]
+},
+{ 
   nome: "Al Ahly x Inter Miami",
   inicio: "2025-06-14T21:00:00-03:00",
   opcoes: [
