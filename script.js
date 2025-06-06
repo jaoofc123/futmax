@@ -16,28 +16,7 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-    { 
-  nome: "Espanha(M) x França(M) (05.06)",
-  inicio: "2025-06-05T16:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/espn" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
-    { nome: "Opção 3", url: "https://daddylive.dad/futemax/stream-88.php" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=sportv" }
-  ]
-},
-      { 
-  nome: "Botafogo SP x Coritiba (05.06)",
-  inicio: "2025-06-05T18:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/extra/eventos3" },
-    { nome: "Opção 2", url: "https://daddylive.mp/futemax/stream-81.php" },
-    { nome: "Opção 3", url: "https://embedcanaistv.com/espn/" },
-    { nome: "Opção 4", url: "https://reidoscanais.cc/embed/?id=espn" }
-  ]
-},
-  { 
+{ 
   nome: "Equador(M) x Brasil(M) (05.06)",
   inicio: "2025-06-05T20:00:00-03:00",
   opcoes: [
