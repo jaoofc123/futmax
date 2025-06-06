@@ -17,7 +17,7 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
 { 
-  nome: "Equador(M) x Brasil(M) (05.06)",
+  nome: "Equador x Brasil (05.06)",
   inicio: "2025-06-05T20:00:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/globosp" },
