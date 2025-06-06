@@ -17,18 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
 { 
-  nome: "Equador x Brasil (05.06)",
-  inicio: "2025-06-05T20:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/globosp" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
-    { nome: "Opção 3", url: "https://nossoplayeronlinehd.lat/extra/eventos1" },
-    { nome: "Opção 4", url: "https://daddylive.dad/futemax/stream-78.php" },
-    { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=sportv" },
-    { nome: "Opção 6", url: "https://reidoscanais.vip/embed/?id=globosp-globosaopaulo" }
-  ]
-},
-{ 
   nome: "Noruega x Italia (06.06)",
   inicio: "2025-06-06T15:45:00-03:00",
   opcoes: [
