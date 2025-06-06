@@ -17,17 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
 { 
-  nome: "Noruega x Italia (06.06)",
-  inicio: "2025-06-06T15:45:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/espn" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos2" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/espn/" },
-    { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=espn" }
-	 ]
-},
-{ 
   nome: "Colômbia x Peru (06.06)",
   inicio: "2025-06-06T17:30:00-03:00",
   opcoes: [
