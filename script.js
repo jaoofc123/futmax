@@ -17,38 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
 { 
-  nome: "Colômbia x Peru (06.06)",
-  inicio: "2025-06-06T17:30:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos1" },
-    { nome: "Opção 3", url: "https://sportzonline.si/channels/bra/br1.php" },
-    { nome: "Opção 4", url: "https://daddylive.dad/futemax/stream-88.php" },
-    { nome: "Opção 5", url: "https://reidoscanais.cc/embed/?id=sportv" }
-	 ]
-},
-{ 
-  nome: "Novorizontino x Chapecoense (06.06)",
-  inicio: "2025-06-06T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/espn" },
-    { nome: "Opção 2", url: "https://sportzonline.si/channels/bra/br3.php" },
-    { nome: "Opção 3", url: "https://reidoscanais.cc/embed/?id=espn" },
-    { nome: "Opção 4", url: "https://daddylive.mp/futemax/stream-81.php" },
-    { nome: "Opção 5", url: "https://nossoplayeronlinehd.lat/extra/eventos3" }
-	 ]
-},
-{ 
-  nome: "Venezuela x Bolivia (06.06)",
-  inicio: "2025-06-06T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/tv/sportv3" },
-    { nome: "Opção 2", url: "https://embedcanaistv.com/sportv3/" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
-    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportv3alternativo" }
-  ]
-},
-{ 
   nome: "Al Ahly x Inter Miami",
   inicio: "2025-06-14T21:00:00-03:00",
   opcoes: [
