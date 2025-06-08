@@ -16,18 +16,6 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-  { 
-  nome: "Portugal x Espanha (Prorrogação/Penalti)",
-  inicio: "2025-06-08T16:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=espn" },
-    { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=sportv" },
-    { nome: "Opção 3", url: "https://sportzonline.si/channels/hd/hd1.php" },
-    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" },
-    { nome: "Opção 5", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" },
-    { nome: "Opção 6", url: "https://reidoscanais.cc/embed/?id=sportv" }
-  ]
-},
     { 
   nome: "Al-Ahly x Pachuca",
   inicio: "2025-06-08T18:00:00-03:00",
