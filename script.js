@@ -17,7 +17,7 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
   { 
-  nome: "Portugal x Espanha",
+  nome: "Portugal x Espanha (Prorrogação/Penalti)",
   inicio: "2025-06-08T16:00:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=espn" },
@@ -29,7 +29,7 @@ const jogos = [
   ]
 },
     { 
-  nome: "Al Aly x Pachuca",
+  nome: "Al-Ahly x Pachuca",
   inicio: "2025-06-08T18:00:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/espn2" },
