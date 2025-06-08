@@ -16,6 +16,39 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
+  { 
+  nome: "Portugal x Espanha",
+  inicio: "2025-06-08T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=espn" },
+    { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=sportv" },
+    { nome: "Opção 3", url: "https://sportzonline.si/channels/hd/hd1.php" },
+    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" },
+    { nome: "Opção 5", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" },
+    { nome: "Opção 6", url: "https://reidoscanais.cc/embed/?id=sportv" }
+  ]
+},
+    { 
+  nome: "Al Aly x Pachuca",
+  inicio: "2025-06-08T18:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/espn2" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos3" },
+    { nome: "Opção 3", url: "https://daddylive.mp/futemax/stream-74.php" },
+    { nome: "Opção 4", url: "https://reidoscanais.cc/embed/?id=espn2" },
+    { nome: "Opção 5", url: "https://sportzonline.si/channels/bra/br3.php" }
+  ]
+},
+    { 
+  nome: "Athletico-PR x Atlético-GO",
+  inicio: "2025-06-08T18:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/extra/eventos5" },
+    { nome: "Opção 2", url: "https://sportzonline.si/channels/bra/br5.php" },
+    { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br5.php" },
+    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=ds2" }
+  ]
+},
 { 
   nome: "Al Ahly x Inter Miami",
   inicio: "2025-06-14T21:00:00-03:00",
