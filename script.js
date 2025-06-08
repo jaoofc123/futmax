@@ -16,25 +16,11 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-    { 
-  nome: "Al-Ahly x Pachuca",
-  inicio: "2025-06-08T18:00:00-03:00",
+  { 
+  nome: "Super Mundial a partir de 14.06 no XFUT",
+  inicio: "2025-06-14T21:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.net/tv/espn2" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.lat/extra/eventos3" },
-    { nome: "Opção 3", url: "https://daddylive.mp/futemax/stream-74.php" },
-    { nome: "Opção 4", url: "https://reidoscanais.cc/embed/?id=espn2" },
-    { nome: "Opção 5", url: "https://sportzonline.si/channels/bra/br3.php" }
-  ]
-},
-    { 
-  nome: "Athletico-PR x Atlético-GO",
-  inicio: "2025-06-08T18:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.lat/extra/eventos5" },
-    { nome: "Opção 2", url: "https://sportzonline.si/channels/bra/br5.php" },
-    { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br5.php" },
-    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=ds2" }
+    { nome: "Todas as Rodadas do primeiro jogo, até a Final!!", url: "https://jaoofc123.github.io/xfut/" }
   ]
 },
 { 
