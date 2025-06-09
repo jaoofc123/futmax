@@ -27,7 +27,7 @@ const jogos = [
   ]
 },
   { 
-  nome: "Corinthians x Flamengo",
+  nome: "Corinthians(F) x Flamengo(F)",
   inicio: "2025-06-09T20:00:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
