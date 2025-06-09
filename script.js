@@ -17,6 +17,26 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
   { 
+  nome: "Criciúma x Vila Nova",
+  inicio: "2025-06-09T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=espn" },
+    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" },
+    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" },
+    { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" }
+  ]
+},
+  { 
+  nome: "Corinthians x Flamengo",
+  inicio: "2025-06-09T20:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
+    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" },
+    { nome: "Opção 3", url: "https://embedflix.top/tv/player.php?id=sportv" },
+    { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
+  ]
+},
+  { 
   nome: "Super Mundial a partir de 14.06 no XFUT",
   inicio: "2025-06-14T21:00:00-03:00",
   opcoes: [
