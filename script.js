@@ -36,9 +36,59 @@ const jogos = [
     { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
   ]
 },
+        { 
+  nome: "Arábia Saudita X Austrália",
+  inicio: "2025-06-10T15:15:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
     { 
-  nome: "Em Breve",
+  nome: "Bolívia X Chile",
+  inicio: "2025-06-10T17:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+      { 
+  nome: "Uruguai X Venezuela",
   inicio: "2025-06-10T20:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+      { 
+  nome: "Argentina X Colômbia",
+  inicio: "2025-06-10T21:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+      { 
+  nome: "Brasil X Paraguai",
+  inicio: "2025-06-10T21:45:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+      { 
+  nome: "Peru X Equador",
+  inicio: "2025-06-10T22:30:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "" },
     { nome: "Opção 2", url: "" },
