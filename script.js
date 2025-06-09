@@ -36,6 +36,16 @@ const jogos = [
     { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
   ]
 },
+    { 
+  nome: "Em Breve",
+  inicio: "2025-06-10T20:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
   { 
   nome: "Super Mundial a partir de 14.06 no XFUT",
   inicio: "2025-06-14T21:00:00-03:00",
@@ -47,160 +57,160 @@ const jogos = [
   nome: "Al Ahly x Inter Miami",
   inicio: "2025-06-14T21:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Bayern x Auckland City",
   inicio: "2025-06-15T13:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "PSG x Atlético Madrid",
   inicio: "2025-06-15T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Palmeiras x Porto",
   inicio: "2025-06-15T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Botafogo x Seattle Sounders",
   inicio: "2025-06-15T23:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Chelsea x León",
   inicio: "2025-06-16T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Boca Juniors x Benfica",
   inicio: "2025-06-16T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Flamengo x Espérance",
   inicio: "2025-06-16T22:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Fluminense x Borussia",
   inicio: "2025-06-17T13:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "River Plate x Urawa Reds",
   inicio: "2025-06-17T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Ulsan Hyundai x Sundowns",
   inicio: "2025-06-17T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Monterrey x Inter",
   inicio: "2025-06-17T22:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "City x Wydad AC",
   inicio: "2025-06-18T13:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Real Madrid x Al-Hilal",
   inicio: "2025-06-18T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Pachuca x RB Salzburg",
   inicio: "2025-06-18T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
 {
   nome: "Al Ain x Juventus",
   inicio: "2025-06-18T22:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 2", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 3", url: "https://jaoofc123.github.io/xfut/" },
-    { nome: "Opção 4", url: "https://jaoofc123.github.io/xfut/" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
   {
