@@ -40,8 +40,8 @@ const jogos = [
   nome: "Uruguai X Venezuela",
   inicio: "2025-06-10T20:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv-3" },
+    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv3" },
     { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv3alternativo" },
     { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportv3" }
   ]
@@ -50,30 +50,30 @@ const jogos = [
   nome: "Argentina X Colômbia",
   inicio: "2025-06-10T21:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv-2" },
+    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" },
+    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv2" },
+    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv2-2" }
   ]
 },
       { 
   nome: "Brasil X Paraguai",
   inicio: "2025-06-10T21:45:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
+    { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=globo-sp" },
+    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=globosp" },
+    { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
   ]
 },
       { 
   nome: "Peru X Equador",
   inicio: "2025-06-10T22:30:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv-3" },
+    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv3" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
+    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportv3alternativo" }
   ]
 },
   { 
@@ -248,6 +248,7 @@ const jogos = [
     inicio: null,
     opcoes: [
       { nome: "UFC 1", url: "https://nossoplayeronlinehd.com/tv/ufcfightpass" },
+      { nome: "UFC 2", url: "https://reidoscanais.vip/embed/?id=ufcfightpass" },
       { nome: "Globo Sp", url: "https://embedcanaistv.com/globosp/" },
       { nome: "SBT", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
       { nome: "Record Tv", url: "https://nossoplayeronlinehd.lat/tv/record" }
