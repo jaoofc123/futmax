@@ -16,44 +16,24 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-  { 
-  nome: "Criciúma x Vila Nova",
-  inicio: "2025-06-09T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=espn" },
-    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" },
-    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn" },
-    { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" }
-  ]
-},
-  { 
-  nome: "Corinthians(F) x Flamengo(F)",
-  inicio: "2025-06-09T20:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
-    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" },
-    { nome: "Opção 3", url: "https://embedflix.top/tv/player.php?id=sportv" },
-    { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
-  ]
-},
         { 
   nome: "Arábia Saudita X Austrália",
   inicio: "2025-06-10T15:15:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=espn-4" },
+    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br6.php" },
+    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn4" },
+    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=espn4" }
   ]
 },
     { 
   nome: "Bolívia X Chile",
   inicio: "2025-06-10T17:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
+    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+    { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" },
+    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportvalternativo" }
   ]
 },
       { 
@@ -62,8 +42,8 @@ const jogos = [
   opcoes: [
     { nome: "Opção 1", url: "" },
     { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv3alternativo" },
+    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportv3" }
   ]
 },
       { 
