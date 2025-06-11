@@ -31,13 +31,23 @@ const jogos = [
   ]
 },
         { 
-  nome: "Brasil X Irã (Vôlei)",
+  nome: "Brasil X Irã (Vôlei Masculino)",
   inicio: "2025-06-11T17:30:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "https://reidoscanais.vip/embed/?id=sportv2" },
     { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=sportv-2" },
     { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv2alternativo" },
     { nome: "Opção 4", url: "https://nossoplayeronlinehd.live/tv/sportv2" }
+  ]
+},
+  { 
+  nome: ". x .",
+  inicio: "2025-06-12T20:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
   { 
