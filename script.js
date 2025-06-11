@@ -41,6 +41,46 @@ const jogos = [
   ]
 },
   { 
+  nome: "Bragantino x Bahia",
+  inicio: "2025-06-12T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+    { 
+  nome: "Vitória x Cruzeiro",
+  inicio: "2025-06-12T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+    { 
+  nome: "Fortaleza x Santos",
+  inicio: "2025-06-12T19:30:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+    { 
+  nome: "Grêmio x .",
+  inicio: "2025-06-12T20:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+    { 
   nome: ". x .",
   inicio: "2025-06-12T20:00:00-03:00",
   opcoes: [
@@ -50,6 +90,17 @@ const jogos = [
     { nome: "Opção 4", url: "" }
   ]
 },
+    { 
+  nome: ". x .",
+  inicio: "2025-06-12T20:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+
   { 
   nome: "Super Mundial a partir de 14.06 no XFUT",
     inicio: null,
