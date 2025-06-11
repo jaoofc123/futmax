@@ -4,8 +4,8 @@ const LOGINS = [
   { username: "lucca", password: "bHVjY2FtZWxvMDAwMQ==" }, //luccamelo0001
   { username: "jose", password: "am9zZXVmYw==" }, //joseufc
   { username: "jacintopinto", password: "bHVpenNhbmp1bGlhbm8xMg==" }, //luizsanjuliano12
-  { username: "nome4", password: "ZXVtdWRvMTIz" },        
-  { username: "nome5", password: "ZXVtdWRvMTIz" },    
+  { username: "italo", password: "ZXVtdWRvMTIz" },        
+  { username: "akira", password: "ZXVtdWRvMTIz" },    
   { username: "nome6", password: "ZXVtdWRvMTIz" },    
   { username: "nome7", password: "ZXVtdWRvMTIz" },    
   { username: "nome8", password: "ZXVtdWRvMTIz" },
@@ -17,23 +17,43 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
       { 
-  nome: "Brasil X Paraguai",
-  inicio: "2025-06-10T21:45:00-03:00",
+  nome: "Ucrânia X Estados Unidos (Vôlei)",
+  inicio: "2025-06-11T14:00:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
-    { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=globo-sp" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=globosp-globosaopaulo" },
-    { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportvalternativo" }
   ]
 },
-      { 
-  nome: "Peru X Equador",
-  inicio: "2025-06-10T22:30:00-03:00",
+        { 
+  nome: "Brasil X Irã (Vôlei)",
+  inicio: "2025-06-11T17:30:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv-3" },
-    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv3" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
-    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportv3alternativo" }
+    { nome: "Opção 1", url: "https://reidoscanais.vip/embed/?id=sportv2" },
+    { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=sportv-2" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv2alternativo" },
+    { nome: "Opção 4", url: "https://nossoplayeronlinehd.live/tv/sportv2" }
+  ]
+},
+        { 
+  nome: "Ucrânia X Estados Unidos (Vôlei)",
+  inicio: "2025-06-11T14:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+        { 
+  nome: "Ucrânia X Estados Unidos (Vôlei)",
+  inicio: "2025-06-11T14:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
   { 
