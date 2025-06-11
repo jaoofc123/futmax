@@ -16,26 +16,6 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-        { 
-  nome: "Arábia Saudita X Austrália",
-  inicio: "2025-06-10T15:15:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=espn-4" },
-    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br6.php" },
-    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=espn4" },
-    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=espn4" }
-  ]
-},
-    { 
-  nome: "Bolívia X Chile",
-  inicio: "2025-06-10T17:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
-    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-    { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" },
-    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportvalternativo" }
-  ]
-},
       { 
   nome: "Uruguai X Venezuela",
   inicio: "2025-06-10T20:00:00-03:00",
