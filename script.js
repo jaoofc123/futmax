@@ -17,7 +17,7 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
       { 
-  nome: "Jogos de Vôlei até 15/06",
+  nome: "Jogos de Vôlei (até 15/06)",
     inicio: null,
   opcoes: [
     { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
