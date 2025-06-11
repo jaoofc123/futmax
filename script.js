@@ -4,9 +4,9 @@ const LOGINS = [
   { username: "lucca", password: "bHVjY2FtZWxvMDAwMQ==" }, //luccamelo0001
   { username: "jose", password: "am9zZXVmYw==" }, //joseufc
   { username: "jacintopinto", password: "bHVpenNhbmp1bGlhbm8xMg==" }, //luizsanjuliano12
-  { username: "italo", password: "ZXVtdWRvMTIz" },        
-  { username: "akira", password: "ZXVtdWRvMTIz" },    
-  { username: "nome6", password: "ZXVtdWRvMTIz" },    
+  { username: "italo", password: "ZXVtdWRvMTIz" },     // 
+  { username: "akira", password: "ZXVtdWRvMTIz" },     //
+  { username: "guerra", password: "Z3VlcnJhMjAyNQ==" },    //guerra2025
   { username: "nome7", password: "ZXVtdWRvMTIz" },    
   { username: "nome8", password: "ZXVtdWRvMTIz" },
   { username: "nome9", password: "ZXVtdWRvMTIz" }
