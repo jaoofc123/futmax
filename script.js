@@ -16,30 +16,6 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-      { 
-  nome: "Jogos de Vôlei (até 15/06)",
-    inicio: null,
-  opcoes: [
-    { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Sportv 2", url: "https://reidoscanais.vip/embed/?id=sportv2" },
-    { nome: "Sportv 2", url: "https://nossoplayeronlinehd.live/tv/sportv2" },
-    { nome: "Sportv 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
-    { nome: "Sportv 3", url: "https://nossoplayeronlinehd.live/tv/sportv3" },
-    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4" },
-    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4alternativo" }
-  ]
-},
-        { 
-  nome: "Brasil X Irã (Vôlei Masculino)",
-  inicio: "2025-06-11T17:30:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://reidoscanais.vip/embed/?id=sportv2" },
-    { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=sportv-2" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv2alternativo" },
-    { nome: "Opção 4", url: "https://nossoplayeronlinehd.live/tv/sportv2" }
-  ]
-},
   { 
   nome: "Bragantino x Bahia",
   inicio: "2025-06-12T19:00:00-03:00",
@@ -100,12 +76,25 @@ const jogos = [
     { nome: "Opção 4", url: "" }
   ]
 },
-
   { 
-  nome: "Super Mundial a partir de 14.06 no XFUT",
+  nome: "Super Mundial a partir de 14/06 no XFUT",
     inicio: null,
   opcoes: [
     { nome: "Todas as Rodadas do primeiro jogo, até a Final!!", url: "https://jaoofc123.github.io/xfut/" }
+  ]
+},
+        { 
+  nome: "Jogos de Vôlei (até 12/06)",
+    inicio: null,
+  opcoes: [
+    { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Sportv 2", url: "https://reidoscanais.vip/embed/?id=sportv2" },
+    { nome: "Sportv 2", url: "https://nossoplayeronlinehd.live/tv/sportv2" },
+    { nome: "Sportv 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
+    { nome: "Sportv 3", url: "https://nossoplayeronlinehd.live/tv/sportv3" },
+    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4" },
+    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4alternativo" }
   ]
 },
   {
