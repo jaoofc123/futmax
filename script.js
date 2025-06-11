@@ -17,8 +17,8 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
       { 
-  nome: "Jogos de Vôlei",
-  inicio: "2025-06-11T14:00:00-03:00",
+  nome: "Jogos de Vôlei até 15/06",
+    inicio: null,
   opcoes: [
     { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
     { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
@@ -42,7 +42,7 @@ const jogos = [
 },
   { 
   nome: "Super Mundial a partir de 14.06 no XFUT",
-  inicio: "2025-06-14T21:00:00-03:00",
+    inicio: null,
   opcoes: [
     { nome: "Todas as Rodadas do primeiro jogo, até a Final!!", url: "https://jaoofc123.github.io/xfut/" }
   ]
