@@ -7,7 +7,7 @@ const LOGINS = [
   { username: "italo", password: "ZXVtdWRvMTIz" },     // 
   { username: "akira", password: "ZXVtdWRvMTIz" },     //
   { username: "guerra", password: "Z3VlcnJhMjAyNQ==" },    //guerra2025
-  { username: "nome7", password: "ZXVtdWRvMTIz" },    
+  { username: "samuel", password: "emFuYXR0YTIwMjU=" },    //zanatta2025
   { username: "nome8", password: "ZXVtdWRvMTIz" },
   { username: "nome9", password: "ZXVtdWRvMTIz" }
 ];
