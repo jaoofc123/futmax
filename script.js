@@ -17,26 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
       { 
-  nome: "Uruguai X Venezuela",
-  inicio: "2025-06-10T20:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv-3" },
-    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv3" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv3alternativo" },
-    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportv3" }
-  ]
-},
-      { 
-  nome: "Argentina X Colômbia",
-  inicio: "2025-06-10T21:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv-2" },
-    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" },
-    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv2" },
-    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv2-2" }
-  ]
-},
-      { 
   nome: "Brasil X Paraguai",
   inicio: "2025-06-10T21:45:00-03:00",
   opcoes: [
