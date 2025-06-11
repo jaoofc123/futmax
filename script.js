@@ -42,7 +42,7 @@ const jogos = [
   opcoes: [
     { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
     { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=globo-sp" },
-    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=globosp" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=globosp-globosaopaulo" },
     { nome: "Opção 4", url: "https://embedflix.top/infra.php?url=/channels/bra/br1.php" }
   ]
 },
