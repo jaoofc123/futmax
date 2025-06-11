@@ -82,7 +82,7 @@ const jogos = [
 },
     { 
   nome: "Atlético-Mg x Internacional",
-  inicio: "2025-06-12T20:00:00-03:00",
+  inicio: "2025-06-12T21:30:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "" },
     { nome: "Opção 2", url: "" },
@@ -92,7 +92,7 @@ const jogos = [
 },
     { 
   nome: "São Paulo x Vasco",
-  inicio: "2025-06-12T20:00:00-03:00",
+  inicio: "2025-06-12T21:30:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "" },
     { nome: "Opção 2", url: "" },
