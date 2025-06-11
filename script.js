@@ -17,13 +17,17 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
       { 
-  nome: "Ucrânia X Estados Unidos (Vôlei)",
+  nome: "Jogos de Vôlei",
   inicio: "2025-06-11T14:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=sportvalternativo" }
+    { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Sportv 2", url: "https://reidoscanais.vip/embed/?id=sportv2" },
+    { nome: "Sportv 2", url: "https://nossoplayeronlinehd.live/tv/sportv2" },
+    { nome: "Sportv 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
+    { nome: "Sportv 3", url: "https://nossoplayeronlinehd.live/tv/sportv3" },
+    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4" },
+    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4alternativo" }
   ]
 },
         { 
@@ -34,26 +38,6 @@ const jogos = [
     { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=sportv-2" },
     { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv2alternativo" },
     { nome: "Opção 4", url: "https://nossoplayeronlinehd.live/tv/sportv2" }
-  ]
-},
-        { 
-  nome: "Ucrânia X Estados Unidos (Vôlei)",
-  inicio: "2025-06-11T14:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
-  ]
-},
-        { 
-  nome: "Ucrânia X Estados Unidos (Vôlei)",
-  inicio: "2025-06-11T14:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
   ]
 },
   { 
