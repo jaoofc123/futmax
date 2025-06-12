@@ -30,60 +30,53 @@ const jogos = [
   nome: "Vitória x Cruzeiro",
   inicio: "2025-06-12T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
+    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
+    { nome: "Opção 3", url: "https://embedflix.top/tv/player.php?id=premiere-3" },
+    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=premiere3" }
   ]
 },
     { 
   nome: "Fortaleza x Santos",
   inicio: "2025-06-12T19:30:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=record-tv" },
+    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=recordsp" },
+    { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br5.php" },
+    { nome: "Opção 4", url: "https://embedflix.top/tv/player.php?id=premiere-6" }
   ]
 },
     { 
   nome: "Grêmio x Corinthians",
   inicio: "2025-06-12T20:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=premiere" },
+    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br3.php" },
+    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere-3" },
+    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere" }
   ]
 },
     { 
   nome: "Atlético-Mg x Internacional",
   inicio: "2025-06-12T21:30:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=premiere-4" },
+    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br6.php" },
+    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere4" },
+    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=globomg" }
   ]
 },
     { 
   nome: "São Paulo x Vasco",
   inicio: "2025-06-12T21:30:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=globo-sp" },
+    { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=premiere-3" },
+    { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" },
+    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=globosp" }
   ]
 },
-  { 
-  nome: "Super Mundial a partir de 14/06 no XFUT",
-    inicio: null,
-  opcoes: [
-    { nome: "Todas as Rodadas do primeiro jogo, até a Final!!", url: "https://jaoofc123.github.io/xfut/" }
-  ]
-},
-        { 
+          { 
   nome: "Jogos de Vôlei (até 12/06)",
     inicio: null,
   opcoes: [
@@ -97,13 +90,20 @@ const jogos = [
     { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4alternativo" }
   ]
 },
+  { 
+  nome: "Super Mundial a partir de 14/06 no XFUT",
+    inicio: null,
+  opcoes: [
+    { nome: "Todas as Rodadas do primeiro jogo, até a Final!!", url: "https://jaoofc123.github.io/xfut/" }
+  ]
+},
   {
     nome: "Canais Fixos",
     inicio: null,
     opcoes: [
       { nome: "UFC 1", url: "https://nossoplayeronlinehd.com/tv/ufcfightpass" },
       { nome: "UFC 2", url: "https://reidoscanais.vip/embed/?id=ufcfightpass" },
-      { nome: "Globo Sp", url: "https://embedcanaistv.com/globosp/" },
+      { nome: "Globo Sp", url: "https://reidoscanais.vip/embed/?id=globosp-globosaopaulo" },
       { nome: "SBT", url: "https://nossoplayeronlinehd.lat/tv/sbt" },
       { nome: "Record Tv", url: "https://nossoplayeronlinehd.lat/tv/record" }
     ]
