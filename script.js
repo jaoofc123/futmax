@@ -4,12 +4,12 @@ const LOGINS = [
   { username: "lucca", password: "bHVjY2FtZWxvMDAwMQ==" }, //luccamelo0001
   { username: "jose", password: "am9zZXVmYw==" }, //joseufc
   { username: "jacintopinto", password: "bHVpenNhbmp1bGlhbm8xMg==" }, //luizsanjuliano12
-  { username: "italo", password: "ZXVtdWRvMTIz" },     // 
-  { username: "akira", password: "ZXVtdWRvMTIz" },     //
   { username: "guerra", password: "Z3VlcnJhMjAyNQ==" },    //guerra2025
   { username: "samuel", password: "emFuYXR0YTIwMjU=" },    //zanatta2025
-  { username: "nome8", password: "ZXVtdWRvMTIz" },
-  { username: "nome9", password: "ZXVtdWRvMTIz" }
+  { username: "nome6", password: "ZXVtdWRvMTIz" },  //
+  { username: "nome7", password: "ZXVtdWRvMTIz" },  //
+  { username: "nome8", password: "ZXVtdWRvMTIz" },  //
+  { username: "nome9", password: "ZXVtdWRvMTIz" }   //
 ];
 
 const SESSION_KEY = "xfut_session";
@@ -78,7 +78,7 @@ const jogos = [
 },
           { 
   nome: "Jogos de Vôlei (até 12/06)",
-    inicio: null,
+  inicio: "2025-06-12T17:30:00-03:00",
   opcoes: [
     { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
     { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
@@ -88,13 +88,6 @@ const jogos = [
     { nome: "Sportv 3", url: "https://nossoplayeronlinehd.live/tv/sportv3" },
     { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4" },
     { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4alternativo" }
-  ]
-},
-  { 
-  nome: "Super Mundial a partir de 14/06 no XFUT",
-    inicio: null,
-  opcoes: [
-    { nome: "Todas as Rodadas do primeiro jogo, até a Final!!", url: "https://jaoofc123.github.io/xfut/" }
   ]
 },
   {
