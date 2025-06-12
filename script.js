@@ -20,10 +20,10 @@ const jogos = [
   nome: "Bragantino x Bahia",
   inicio: "2025-06-12T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=premiere-4" },
+    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" },
+    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere4" },
+    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=premiere4" }
   ]
 },
     { 
