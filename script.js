@@ -16,6 +16,21 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
+          { 
+  nome: "Jogos de Vôlei (até 13/06)",
+  inicio: "2025-06-13T17:30:00-03:00",
+  opcoes: [
+    { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Sportv 2", url: "https://reidoscanais.vip/embed/?id=sportv2" },
+    { nome: "Sportv 2", url: "https://nossoplayeronlinehd.live/tv/sportv2" },
+    { nome: "Sportv 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
+    { nome: "Sportv 3", url: "https://nossoplayeronlinehd.live/tv/sportv3" },
+    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4" },
+    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4alternativo" }
+  ]
+},
+    //1° rodada
   { 
   nome: "Al Ahly x Inter Miami",
   inicio: "2025-06-14T21:00:00-03:00",
@@ -176,18 +191,329 @@ const jogos = [
     { nome: "Opção 4", url: "" }
   ]
 },
-          { 
-  nome: "Jogos de Vôlei (até 13/06)",
-  inicio: "2025-06-13T17:30:00-03:00",
+//2° rodada
+{
+  nome: "Palmeiras x Al Ahly",
+  inicio: "2025-06-19T13:00:00-03:00",
   opcoes: [
-    { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Sportv 2", url: "https://reidoscanais.vip/embed/?id=sportv2" },
-    { nome: "Sportv 2", url: "https://nossoplayeronlinehd.live/tv/sportv2" },
-    { nome: "Sportv 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
-    { nome: "Sportv 3", url: "https://nossoplayeronlinehd.live/tv/sportv3" },
-    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4" },
-    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4alternativo" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Inter Miami x Porto",
+  inicio: "2025-06-19T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Seattle Sounders x Atlético Madrid",
+  inicio: "2025-06-19T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "PSG x Botafogo",
+  inicio: "2025-06-19T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+// Jogos de 20/06
+{
+  nome: "Benfica x Auckland City",
+  inicio: "2025-06-20T13:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Flamengo x Chelsea",
+  inicio: "2025-06-20T15:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "León x Espérance",
+  inicio: "2025-06-20T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Bayern x Boca Juniors",
+  inicio: "2025-06-20T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+// Jogos de 21/06
+{
+  nome: "Sundowns x Borussia",
+  inicio: "2025-06-21T13:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Inter x Urawa Reds",
+  inicio: "2025-06-21T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Fluminense x Ulsan Hyundai",
+  inicio: "2025-06-21T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "River Plate x Monterrey",
+  inicio: "2025-06-21T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+// Jogos de 22/06
+{
+  nome: "Juventus x Wydad AC",
+  inicio: "2025-06-22T13:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Real Madrid x Pachuca",
+  inicio: "2025-06-22T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "RB Salzburg x Al-Hilal",
+  inicio: "2025-06-22T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "City x Al Ain",
+  inicio: "2025-06-22T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+// 3° rodada 
+{
+  nome: "Seattle Sounders x PSG",
+  inicio: "2025-06-23T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Atlético Madrid x Botafogo",
+  inicio: "2025-06-23T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Porto x Al Ahly",
+  inicio: "2025-06-23T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Inter Miami x Palmeiras",
+  inicio: "2025-06-23T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Auckland City x Boca Juniors",
+  inicio: "2025-06-24T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Benfica x Bayern",
+  inicio: "2025-06-24T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Espérance x Chelsea",
+  inicio: "2025-06-24T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "León x Flamengo",
+  inicio: "2025-06-24T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Borussia x Ulsan Hyundai",
+  inicio: "2025-06-25T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Sundowns x Fluminense",
+  inicio: "2025-06-25T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Urawa Reds x Monterrey",
+  inicio: "2025-06-25T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Inter x River Plate",
+  inicio: "2025-06-25T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Juventus x City",
+  inicio: "2025-06-26T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Wydad AC x Al Ain",
+  inicio: "2025-06-26T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Al-Hilal x Pachuca",
+  inicio: "2025-06-26T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "RB Salzburg x Real Madrid",
+  inicio: "2025-06-26T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
   {
