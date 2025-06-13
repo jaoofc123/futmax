@@ -17,68 +17,168 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
   { 
-  nome: "Bragantino x Bahia",
-  inicio: "2025-06-12T19:00:00-03:00",
+  nome: "Al Ahly x Inter Miami",
+  inicio: "2025-06-14T21:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=premiere-4" },
-    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br4.php" },
-    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere4" },
-    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=premiere4" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
-    { 
-  nome: "Vitória x Cruzeiro",
-  inicio: "2025-06-12T19:00:00-03:00",
+{
+  nome: "Bayern x Auckland City",
+  inicio: "2025-06-15T13:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=sportv" },
-    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=sportv" },
-    { nome: "Opção 3", url: "https://embedflix.top/tv/player.php?id=premiere-3" },
-    { nome: "Opção 4", url: "https://reidoscanais.vip/embed/?id=premiere3" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
-    { 
-  nome: "Fortaleza x Santos",
-  inicio: "2025-06-12T19:30:00-03:00",
+{
+  nome: "PSG x Atlético Madrid",
+  inicio: "2025-06-15T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=record-tv" },
-    { nome: "Opção 2", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=recordsp" },
-    { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br5.php" },
-    { nome: "Opção 4", url: "https://embedflix.top/tv/player.php?id=premiere-6" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
-    { 
-  nome: "Grêmio x Corinthians",
-  inicio: "2025-06-12T20:00:00-03:00",
+{
+  nome: "Palmeiras x Porto",
+  inicio: "2025-06-15T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=premiere" },
-    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br3.php" },
-    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere-3" },
-    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
-    { 
-  nome: "Atlético-Mg x Internacional",
-  inicio: "2025-06-12T21:30:00-03:00",
+{
+  nome: "Botafogo x Seattle Sounders",
+  inicio: "2025-06-15T23:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=premiere-4" },
-    { nome: "Opção 2", url: "https://embedflix.top/infra.php?url=/channels/bra/br6.php" },
-    { nome: "Opção 3", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=premiere4" },
-    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=globomg" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
-    { 
-  nome: "São Paulo x Vasco",
-  inicio: "2025-06-12T21:30:00-03:00",
+{
+  nome: "Chelsea x León",
+  inicio: "2025-06-16T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "https://embedflix.top/tv/player.php?id=globo-sp" },
-    { nome: "Opção 2", url: "https://embedflix.top/tv/player.php?id=premiere-3" },
-    { nome: "Opção 3", url: "https://embedflix.top/infra.php?url=/channels/bra/br2.php" },
-    { nome: "Opção 4", url: "https://meuplayeronlinehd.com/myplay/watch.html?id=globosp" }
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Boca Juniors x Benfica",
+  inicio: "2025-06-16T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Flamengo x Espérance",
+  inicio: "2025-06-16T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Fluminense x Borussia",
+  inicio: "2025-06-17T13:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "River Plate x Urawa Reds",
+  inicio: "2025-06-17T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Ulsan Hyundai x Sundowns",
+  inicio: "2025-06-17T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Monterrey x Inter",
+  inicio: "2025-06-17T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "City x Wydad AC",
+  inicio: "2025-06-18T13:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Real Madrid x Al-Hilal",
+  inicio: "2025-06-18T16:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Pachuca x RB Salzburg",
+  inicio: "2025-06-18T19:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
+  ]
+},
+{
+  nome: "Al Ain x Juventus",
+  inicio: "2025-06-18T22:00:00-03:00",
+  opcoes: [
+    { nome: "Opção 1", url: "" },
+    { nome: "Opção 2", url: "" },
+    { nome: "Opção 3", url: "" },
+    { nome: "Opção 4", url: "" }
   ]
 },
           { 
-  nome: "Jogos de Vôlei (até 12/06)",
-  inicio: "2025-06-12T17:30:00-03:00",
+  nome: "Jogos de Vôlei (até 13/06)",
+  inicio: "2025-06-13T17:30:00-03:00",
   opcoes: [
     { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
     { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
