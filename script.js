@@ -1,12 +1,12 @@
 const LOGINS = [
   { username: "admjao", password: "SlAxMjMhMTIz" },
-  { username: "pedro", password: "cGVkcm9oZW5yaXF1ZTIwMTI=" }, //pedrohenrique2012
-  { username: "lucca", password: "bHVjY2FtZWxvMDAwMQ==" }, //luccamelo0001
-  { username: "jose", password: "am9zZXVmYw==" }, //joseufc
-  { username: "jacintopinto", password: "bHVpenNhbmp1bGlhbm8xMg==" }, //luizsanjuliano12
-  { username: "guerra", password: "Z3VlcnJhMjAyNQ==" },    //guerra2025
-  { username: "samuel", password: "emFuYXR0YTIwMjU=" },    //zanatta2025
-  { username: "nome6", password: "ZXVtdWRvMTIz" },  //
+  { username: "pedro", password: "cGVkcm9oZW5yaXF1ZTIwMTI=" }, //
+  { username: "lucca", password: "bHVjY2FtZWxvMDAwMQ==" }, //
+  { username: "jose", password: "am9zZXVmYw==" }, //
+  { username: "jacintopinto", password: "bHVpenNhbmp1bGlhbm8xMg==" }, //
+  { username: "guerra", password: "Z3VlcnJhMjAyNQ==" },    //
+  { username: "samuel", password: "emFuYXR0YTIwMjU=" },    //
+  { username: "isabella", password: "YmVsbGEyMDI1NQ==" },  //
   { username: "nome7", password: "ZXVtdWRvMTIz" },  //
   { username: "nome8", password: "ZXVtdWRvMTIz" },  //
   { username: "nome9", password: "ZXVtdWRvMTIz" }   //
