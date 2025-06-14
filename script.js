@@ -17,8 +17,8 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
           { 
-  nome: "Jogos de Vôlei (até 13/06)",
-  inicio: "2025-06-13T17:30:00-03:00",
+  nome: "Jogos de Vôlei (até 14/06)",
+    inicio: null,
   opcoes: [
     { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
     { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
@@ -35,10 +35,11 @@ const jogos = [
   nome: "Al Ahly x Inter Miami",
   inicio: "2025-06-14T21:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/extra/eventos1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://daddylive.dad/futemax/stream-78.php" },
+    { nome: "Opção 5", url: "https://sportzonline.si/channels/bra/br1.php" }
   ]
 },
 {
