@@ -16,21 +16,6 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-          { 
-  nome: "Jogos de Vôlei (até 14/06)",
-    inicio: null,
-  opcoes: [
-    { nome: "Sportv", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Sportv", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Sportv 2", url: "https://reidoscanais.vip/embed/?id=sportv2" },
-    { nome: "Sportv 2", url: "https://nossoplayeronlinehd.live/tv/sportv2" },
-    { nome: "Sportv 3", url: "https://reidoscanais.vip/embed/?id=sportv3" },
-    { nome: "Sportv 3", url: "https://nossoplayeronlinehd.live/tv/sportv3" },
-    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4" },
-    { nome: "Sportv 4", url: "https://reidoscanais.vip/embed/?id=sportv4alternativo" }
-  ]
-},
-    //1° rodada
   { 
   nome: "Al Ahly x Inter Miami",
   inicio: "2025-06-14T21:00:00-03:00",
