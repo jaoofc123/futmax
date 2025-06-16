@@ -17,26 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
 {
-  nome: "Palmeiras x Porto",
-  inicio: "2025-06-15T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/globosp" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" }
-  ]
-},
-{
-  nome: "Botafogo x Seattle Sounders",
-  inicio: "2025-06-15T23:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 3", url: "https://nossoplayeronlinehd.live/tv/globosp" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" }
-  ]
-},
-{
   nome: "Chelsea x León",
   inicio: "2025-06-16T16:00:00-03:00",
   opcoes: [
