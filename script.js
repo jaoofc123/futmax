@@ -18,13 +18,12 @@ const SESSION_KEY = "xfut_session";
 const jogos = [
 {
   nome: "Ulsan Hyundai x Sundowns",
-  inicio: "2025-06-17T19:00:00-03:00",
+  inicio: "2025-06-17T20:05:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
     { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
     { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" }
   ]
 },
 {
