@@ -17,18 +17,8 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
 {
-  nome: "Ulsan Hyundai x Sundowns",
-  inicio: "2025-06-17T20:05:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" }
-  ]
-},
-{
-  nome: "Monterrey x Inter",
-  inicio: "2025-06-17T22:00:00-03:00",
+  nome: "Manchester City x Wydad AC",
+  inicio: "2025-06-18T13:00:00-03:00",
   opcoes: [
     { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
     { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
@@ -38,43 +28,36 @@ const jogos = [
   ]
 },
 {
-  nome: "Manchester City x Wydad AC",
-  inicio: "2025-06-18T13:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
-  ]
-},
-{
   nome: "Real Madrid x Al-Hilal",
   inicio: "2025-06-18T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Pachuca x RB Salzburg",
   inicio: "2025-06-18T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Al Ain x Juventus",
   inicio: "2025-06-18T22:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 //2° rodada
