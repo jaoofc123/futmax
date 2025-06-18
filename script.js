@@ -17,28 +17,6 @@ const SESSION_KEY = "xfut_session";
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
 {
-  nome: "Manchester City x Wydad AC",
-  inicio: "2025-06-18T13:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
-{
-  nome: "Real Madrid x Al-Hilal",
-  inicio: "2025-06-18T16:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
-{
   nome: "Pachuca x RB Salzburg",
   inicio: "2025-06-18T19:00:00-03:00",
   opcoes: [
@@ -65,40 +43,44 @@ const jogos = [
   nome: "Palmeiras x Al Ahly",
   inicio: "2025-06-19T13:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Inter Miami x Porto",
   inicio: "2025-06-19T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Seattle Sounders x Atlético Madrid",
   inicio: "2025-06-19T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "PSG x Botafogo",
   inicio: "2025-06-19T22:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 // Jogos de 20/06
