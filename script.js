@@ -16,90 +16,49 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-// Jogos de 20/06
-{
-  nome: "Benfica x Auckland City",
-  inicio: "2025-06-20T13:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
-{
-  nome: "Flamengo x Chelsea",
-  inicio: "2025-06-20T15:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
-{
-  nome: "León x Espérance",
-  inicio: "2025-06-20T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
-{
-  nome: "Bayern x Boca Juniors",
-  inicio: "2025-06-20T22:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
 // Jogos de 21/06
 {
   nome: "Sundowns x Borussia",
   inicio: "2025-06-21T13:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Inter x Urawa Reds",
   inicio: "2025-06-21T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Fluminense x Ulsan Hyundai",
   inicio: "2025-06-21T19:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "River Plate x Monterrey",
   inicio: "2025-06-21T22:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 // Jogos de 22/06
