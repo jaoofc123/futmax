@@ -16,90 +16,49 @@ const SESSION_KEY = "xfut_session";
 
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
-// Jogos de 22/06
-{
-  nome: "Juventus x Wydad AC",
-  inicio: "2025-06-22T13:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
-{
-  nome: "Real Madrid x Pachuca",
-  inicio: "2025-06-22T16:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
-{
-  nome: "RB Salzburg x Al-Hilal",
-  inicio: "2025-06-22T19:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
-{
-  nome: "City x Al Ain",
-  inicio: "2025-06-22T22:00:00-03:00",
-  opcoes: [
-    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
-    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
-    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
-    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
-    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
-  ]
-},
 // 3° rodada 
 {
   nome: "Seattle Sounders x PSG",
   inicio: "2025-06-23T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Atlético Madrid x Botafogo",
   inicio: "2025-06-23T16:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Porto x Al Ahly",
   inicio: "2025-06-23T22:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
   nome: "Inter Miami x Palmeiras",
   inicio: "2025-06-23T22:00:00-03:00",
   opcoes: [
-    { nome: "Opção 1", url: "" },
-    { nome: "Opção 2", url: "" },
-    { nome: "Opção 3", url: "" },
-    { nome: "Opção 4", url: "" }
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+    { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
+    { nome: "Opção 3", url: "https://reidoscanais.vip/embed/?id=sportv" },
+    { nome: "Opção 4", url: "https://embedcanaistv.com/sportv/" },
+    { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
 {
