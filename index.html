@@ -5,21 +5,64 @@
   <title>Xfut</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .login-flex-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 32px;
+    }
+    .ad-left {
+      min-width: 240px;
+      max-width: 300px;
+    }
+    @media (max-width: 700px) {
+      .login-flex-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .ad-left {
+        margin-bottom: 20px;
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="login-container" class="center-box">
-    <div id="user-notification" class="user-notification">
-      <span>Temos uma programação imperdível! Jogos da Seleção Brasileira Feminina e Masculina, finais de campeonatos nacionais e internacionais, além das partidas decisivas da Copa do Brasil, Libertadores e muito mais!</span>
-      <button class="close-notification" onclick="closeNotification()">×</button>
+  <div class="login-flex-container">
+    <!-- Anúncio lateral esquerda -->
+    <div class="ad-left">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4667385526346303"
+        crossorigin="anonymous"></script>
+      <ins class="adsbygoogle"
+        style="display:block;background-color:rgb(200,200,200)"
+        data-ad-client="ca-pub-4667385526346303"
+        data-ad-slot="2007934782"
+        data-adtest="on"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
-    <div id="login-notice" class="login-notice">
-      Assista aos jogos mais importantes, como o Super Mundial de Clubes, por apenas <b>R$5,50/mês!</b> Futebol pra você e pra todo mundo!
+    <!-- Área de login original -->
+    <div id="login-container" class="center-box">
+      <div id="user-notification" class="user-notification">
+        <span>Temos uma programação imperdível! Jogos da Seleção Brasileira Feminina e Masculina, finais de campeonatos nacionais e internacionais, além das partidas decisivas da Copa do Brasil e Libertadores. Acesse o Xfut e não perca nada!</span>
+        <button class="close-notification" onclick="closeNotification()">×</button>
+      </div>
+      <div id="login-notice" class="login-notice">
+        Assista aos jogos mais importantes, como o Super Mundial de Clubes, por apenas <b>R$5,50/mês!</b> Futebol pra você e pra todo mundo!
+      </div>
+      <h2>Login Xfut</h2>
+      <input type="text" id="username" placeholder="Usuário" autocomplete="username">
+      <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
+      <button onclick="login()">Entrar</button>
+      <p id="login-msg" class="error"></p>
     </div>
-    <h2>Login Xfut</h2>
-    <input type="text" id="username" placeholder="Usuário" autocomplete="username">
-    <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
-    <button onclick="login()">Entrar</button>
-    <p id="login-msg" class="error"></p>
   </div>
   <div id="main-container" class="center-box" style="display: none;">
     <h2>Lista de Jogos do Xfut</h2>
