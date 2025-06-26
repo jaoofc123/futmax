@@ -13,7 +13,7 @@ const LOGINS = [
 ];
 
 const SESSION_KEY = "xfut_session";
-//Temos uma programação imperdível! Jogos da Seleção Brasileira Feminina e Masculina, finais de campeonatos nacionais e internacionais, além das partidas decisivas da Copa do Brasil, Libertadores e muito mais!
+
 // Lista de jogos e opções (agora com data e hora exata de início)
 const jogos = [
 {
