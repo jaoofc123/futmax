@@ -18,7 +18,7 @@ const SESSION_KEY = "xfut_session";
 const jogos = [
 {
   nome: "Jogos do Super Mundial",
-  inicio: "null",
+  inicio: null,
   opcoes: [
     { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
     { nome: "Opção 2", url: "https://nossoplayeronlinehd.live/tv/caze1" },
