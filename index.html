@@ -7,19 +7,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="login-container" class="center-box">
-    <div id="user-notification" class="user-notification">
-      <span>Estamos em Manutenção!!!</span> 
-      <button class="close-notification" onclick="closeNotification()">×</button>
+  <!-- Wrapper para anúncio e login lado a lado -->
+  <div style="display: flex; justify-content: center; align-items: flex-start; min-height: 700px;">
+    <!-- Anúncio à esquerda -->
+    <div style="margin-right: 24px;">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4667385526346303"
+        crossorigin="anonymous"></script>
+      <!-- Xfut -->
+      <ins class="adsbygoogle"
+        style="display:inline-block;width:200px;height:700px"
+        data-ad-client="ca-pub-4667385526346303"
+        data-ad-slot="2007934782"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
-    <div id="login-notice" class="login-notice">
-      Assista aos jogos mais importantes, como o Super Mundial de Clubes, por apenas <b>R$5,50/mês!</b> Futebol pra você e pra todo mundo!
+    <!-- Login à direita -->
+    <div id="login-container" class="center-box">
+      <div id="user-notification" class="user-notification">
+        <span>Estamos em Manutenção!!!</span> 
+        <button class="close-notification" onclick="closeNotification()">×</button>
+      </div>
+      <div id="login-notice" class="login-notice">
+        Assista aos jogos mais importantes, como o Super Mundial de Clubes, por apenas <b>R$5,50/mês!</b> Futebol pra você e pra todo mundo!
+      </div>
+      <h2>Login Xfut</h2>
+      <input type="text" id="username" placeholder="Usuário" autocomplete="username">
+      <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
+      <button onclick="login()">Entrar</button>
+      <p id="login-msg" class="error"></p>
     </div>
-    <h2>Login Xfut</h2>
-    <input type="text" id="username" placeholder="Usuário" autocomplete="username">
-    <input type="password" id="password" placeholder="Senha" autocomplete="current-password">
-    <button onclick="login()">Entrar</button>
-    <p id="login-msg" class="error"></p>
   </div>
   <div id="main-container" class="center-box" style="display: none;">
     <h2>Lista de Jogos do Xfut</h2>
