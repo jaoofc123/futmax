@@ -27,6 +27,14 @@ const jogos = [
     { nome: "Opção 5", url: "https://www.youtube.com/@CazeTV" }
   ]
 },
+{
+  nome: "Palmeiras VS Flamengo",
+  coresA: ['#20c20e', '#ffffff', '#20c20e'], // cores Time01
+  coresB: ['#ff1500', '#000000', '#ff1500'], // cores Time02
+  opcoes: [
+    { nome: "Opção 1", url: "https://nossoplayeronlinehd.live/tv/sportv" },
+  ]
+},
   {
     nome: "Canais Fixos",
     inicio: null,
@@ -232,4 +240,40 @@ function showMain() {
   setupRodapeScroll();
 }
 
+function criarNomeComGradienteDuplo(nome, coresA, coresB) {
+  const [timeA, timeB] = nome.split(' VS ');
+  const container = document.createElement('span');
+
+  // Time A
+  const spanA = document.createElement('span');
+  spanA.textContent = timeA;
+  spanA.style.background = `linear-gradient(90deg, ${coresA[0]}, ${coresA[1]}, ${coresA[2]})`;
+  spanA.style.webkitBackgroundClip = 'text';
+  spanA.style.webkitTextFillColor = 'transparent';
+  spanA.style.backgroundClip = 'text';
+  spanA.style.textFillColor = 'transparent';
+  spanA.style.fontWeight = 'bold';
+
+  // VS (sempre branco)
+  const vs = document.createElement('span');
+  vs.textContent = ' VS ';
+  vs.style.color = 'white';
+  vs.style.fontWeight = 'bold';
+
+  // Time B
+  const spanB = document.createElement('span');
+  spanB.textContent = timeB;
+  spanB.style.background = `linear-gradient(90deg, ${coresB[0]}, ${coresB[1]}, ${coresB[2]})`;
+  spanB.style.webkitBackgroundClip = 'text';
+  spanB.style.webkitTextFillColor = 'transparent';
+  spanB.style.backgroundClip = 'text';
+  spanB.style.textFillColor = 'transparent';
+  spanB.style.fontWeight = 'bold';
+
+  container.appendChild(spanA);
+  container.appendChild(vs);
+  container.appendChild(spanB);
+
+  return container;
+}
 // -----------------------------------------------------
